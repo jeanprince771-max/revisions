@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESG Learn — Expert en Ingénierie Patrimoniale</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1c2b4a;--navy2:#253660;--gold:#c9953a;--gold-pale:#fdf6e8;
+  --cream:#f7f5f0;--white:#fff;--text:#1e1e1e;--muted:#6b7280;--light:#9ca3af;
+  --border:#ddd8ce;--green:#1e6641;--green-bg:#edf7f1;--green-bd:#9dd4b4;
+  --orange:#92400e;--orange-bg:#fff8ec;--red:#991b1b;--red-bg:#fef2f2;--red-bd:#fca5a5;
+  --blue:#1d4ed8;--blue-bg:#eff6ff;--blue-bd:#bfdbfe;--r:6px;
+}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--text);min-height:100vh;font-size:14px;line-height:1.6}
+.topbar{background:var(--navy2);height:36px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.03em}
+.topbar b{color:rgba(255,255,255,.85);font-weight:500}
+.site-header{background:var(--navy);border-bottom:3px solid var(--gold);padding:0 2rem}
+.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-mark{width:42px;height:42px;background:var(--gold);border-radius:3px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:20px;color:var(--navy);font-weight:700}
+.brand-text h1{font-size:16px;font-weight:600;color:#fff;letter-spacing:.01em}
+.brand-text p{font-size:10px;color:rgba(255,255,255,.45);letter-spacing:.09em;text-transform:uppercase;margin-top:1px}
+.header-right{color:rgba(255,255,255,.4);font-size:11px;text-align:right;line-height:1.8}
+.main-nav{background:var(--white);border-bottom:1px solid var(--border)}
+.main-nav-inner{max-width:1100px;margin:0 auto;display:flex}
+.nav-tab{padding:14px 20px;font-size:13px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;font-weight:500;user-select:none;display:flex;align-items:center;gap:7px}
+.nav-tab:hover{color:var(--navy)}
+.nav-tab.active{color:var(--navy);border-bottom-color:var(--gold);font-weight:600}
+.page-wrap{max-width:1100px;margin:0 auto;padding:1.75rem 2rem 5rem}
+.tab-content{display:none}.tab-content.active{display:block}
+
+/* ── RESOLVER ── */
+.resolver-layout{display:grid;grid-template-columns:260px 1fr;gap:1.5rem;align-items:start}
+.sidebar{display:flex;flex-direction:column;gap:1rem}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.scard-head{background:var(--navy);color:#fff;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:9px 14px}
+.scard-body{padding:14px}
+.form-label{display:block;font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}
+.form-input{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:5px;font-size:13px;font-family:monospace;background:#fafafa;color:var(--text);outline:none;transition:border-color .15s}
+.form-input:focus{border-color:var(--gold);background:#fff}
+.form-input.ok{border-color:var(--green);background:var(--green-bg)}
+.toggle-btn{padding:8px 11px;border:1px solid var(--border);border-radius:5px;background:#fafafa;cursor:pointer;font-size:12px;flex-shrink:0}
+.key-row{display:flex;gap:6px}
+.key-link{font-size:11px;color:var(--blue);margin-top:4px;display:block}
+.remember-row{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:12px;color:var(--muted);cursor:pointer}
+.remember-row input{cursor:pointer}
+.status-row{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:11px;color:var(--muted)}
+.dot{width:7px;height:7px;border-radius:50%;background:#ccc;flex-shrink:0}
+.dot.ok{background:var(--green)}.dot.warn{background:var(--gold)}
+.legend-item{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12px;line-height:1.4}
+.legend-item:last-child{margin-bottom:0}
+.lbadge{padding:1px 8px;border-radius:999px;font-size:10px;font-weight:700;white-space:nowrap}
+.lb-a{background:#22c55e;color:#fff}.lb-p{background:var(--gold);color:#fff}.lb-n{background:#ef4444;color:#fff}
+.content-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:1rem}
+.content-card-head{background:var(--navy);color:#fff;padding:12px 18px;display:flex;align-items:center;justify-content:space-between}
+.content-card-head h2{font-size:13px;font-weight:600}
+.badge-edc{background:var(--gold);color:var(--navy);font-size:10px;font-weight:700;padding:2px 9px;border-radius:999px}
+.content-card-body{padding:16px 18px}
+.textarea-sujet{width:100%;min-height:200px;padding:12px;border:1px solid var(--border);border-radius:5px;font-size:13px;font-family:'Inter',sans-serif;resize:vertical;outline:none;transition:border-color .15s;background:#fafafa;color:var(--text);line-height:1.7}
+.textarea-sujet:focus{border-color:var(--gold);background:#fff}
+.textarea-sujet::placeholder{color:var(--light)}
+.or-line{display:flex;align-items:center;gap:8px;margin:10px 0;color:var(--light);font-size:11px}
+.or-line::before,.or-line::after{content:'';flex:1;height:1px;background:var(--border)}
+.upload-zone{border:1.5px dashed var(--border);border-radius:5px;padding:16px 10px;text-align:center;cursor:pointer;transition:all .15s;background:#fafafa}
+.upload-zone:hover,.upload-zone.over{border-color:var(--gold);background:var(--gold-pale)}
+.upload-zone.loaded{border-color:var(--green);background:var(--green-bg);border-style:solid}
+.upload-zone input{display:none}
+.uz-icon{font-size:22px;margin-bottom:4px}
+.uz-label{font-size:12px;font-weight:500;color:var(--text)}
+.uz-sub{font-size:11px;color:var(--light);margin-top:2px}
+.file-chip{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--green-bd);border-radius:4px;padding:5px 9px;font-size:11px;margin-top:6px}
+.chip-name{color:var(--green);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:75%}
+.chip-del{cursor:pointer;color:var(--light);font-size:15px;flex-shrink:0}.chip-del:hover{color:var(--red)}
+.prog-bar{display:none;margin-top:8px}
+.prog-track{height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:var(--gold);border-radius:2px;transition:width .2s}
+.prog-label{font-size:10px;color:var(--muted);margin-top:3px}
+.btn-submit{width:100%;padding:12px;background:var(--navy);color:#fff;border:none;border-radius:5px;font-size:14px;font-weight:600;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:2px}
+.btn-submit:hover:not(:disabled){background:var(--navy2)}
+.btn-submit:disabled{background:#c5c5c5;cursor:not-allowed}
+.spinner{width:14px;height:14px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;display:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.errbox{background:var(--red-bg);border:1px solid var(--red-bd);border-radius:5px;padding:10px 14px;font-size:12px;color:var(--red);display:none;margin-top:10px}
+.info-chip{background:var(--blue-bg);border:1px solid var(--blue-bd);border-radius:4px;padding:8px 10px;font-size:11px;color:#1e3a8a;line-height:1.5;margin-bottom:10px}
+.empty-state{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:3rem 2rem;text-align:center;color:var(--muted)}
+.empty-icon{font-size:42px;margin-bottom:1rem;opacity:.5}
+.empty-state h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:.4rem}
+.empty-state p{font-size:13px;line-height:1.6;max-width:340px;margin:0 auto}
+
+/* ── RESULT ── */
+#result-wrap{display:none}
+.result-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.result-header{background:var(--navy);color:#fff;padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+.result-header h2{font-size:14px;font-weight:600}
+.mention-badge{font-size:11px;font-weight:700;padding:3px 12px;border-radius:999px;letter-spacing:.03em}
+.m-acquis{background:#22c55e;color:#fff}.m-partiel{background:var(--gold);color:#fff}
+.m-non{background:#ef4444;color:#fff}.m-def{background:#6b7280;color:#fff}
+.result-body{padding:20px 22px;font-size:13.5px;line-height:1.9}
+.result-body h2{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin:1.8rem 0 .7rem;padding-bottom:6px;border-bottom:2px solid var(--gold)}
+.result-body h2:first-child{margin-top:0}
+.result-body h3{font-size:14px;font-weight:600;color:var(--navy);margin:1.2rem 0 .4rem;padding-left:10px;border-left:3px solid var(--gold)}
+.result-body h4{font-size:11px;font-weight:600;color:var(--muted);margin:.8rem 0 .3rem;text-transform:uppercase;letter-spacing:.05em}
+.result-body p{margin-bottom:.6rem}
+.result-body ul{margin:.3rem 0 .7rem 1.2rem}
+.result-body li{margin-bottom:3px}
+.result-body strong{color:var(--navy);font-weight:600}
+.result-body hr{border:none;border-top:1px solid var(--border);margin:1.2rem 0}
+.result-body table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:12.5px}
+.result-body th{background:var(--navy);color:#fff;padding:7px 12px;text-align:left;font-weight:500;font-size:11px;letter-spacing:.04em}
+.result-body td{padding:7px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.result-body tr:nth-child(even) td{background:#fafaf8}
+.calc-block{background:var(--blue-bg);border:1px solid var(--blue-bd);border-radius:5px;padding:12px 14px;margin:.8rem 0;font-family:monospace;font-size:12.5px;line-height:2;color:#1e3a8a}
+.calc-title{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#3b82f6;margin-bottom:6px}
+.pourquoi-block{background:var(--gold-pale);border:1px solid #e8c87a;border-radius:5px;padding:12px 14px;margin:.8rem 0;font-size:13px;line-height:1.8;color:#78350f}
+.pourquoi-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin-bottom:5px}
+.btn-copy{padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:4px;background:transparent;color:#ccc;font-size:11px;cursor:pointer}
+.btn-copy:hover{background:rgba(255,255,255,.12);color:#fff}
+
+/* ── COURS ── */
+.cours-layout{display:grid;grid-template-columns:240px 1fr;gap:1.5rem;align-items:start}
+.cours-nav{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;position:sticky;top:1rem}
+.cours-nav-title{background:var(--navy);color:#fff;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:9px 14px}
+.cours-nav-item{padding:10px 14px;font-size:12.5px;cursor:pointer;border-bottom:1px solid var(--border);transition:all .15s;display:flex;align-items:center;gap:8px}
+.cours-nav-item:last-child{border-bottom:none}
+.cours-nav-item:hover{background:var(--cream)}
+.cours-nav-item.active{background:var(--gold-pale);color:var(--navy);font-weight:600;border-left:3px solid var(--gold)}
+.cours-nav-item .cicon{font-size:14px;flex-shrink:0}
+.cours-content-area{}
+.cours-chapter{display:none}
+.cours-chapter.active{display:block}
+.chapitre-header{background:var(--white);border:1px solid var(--border);border-radius:var(--r) var(--r) 0 0;padding:18px 22px;border-bottom:2px solid var(--gold)}
+.chapitre-header h2{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.chapitre-header p{font-size:12px;color:var(--muted)}
+.chapitre-body{background:var(--white);border:1px solid var(--border);border-top:none;border-radius:0 0 var(--r) var(--r);padding:22px}
+.cours-section{margin-bottom:2rem}
+.cours-section:last-child{margin-bottom:0}
+.cours-section h3{font-size:14px;font-weight:600;color:var(--navy);padding:8px 12px;background:var(--gold-pale);border-left:3px solid var(--gold);border-radius:0 4px 4px 0;margin-bottom:12px}
+.cours-section h4{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:12px 0 6px}
+.cours-section p{font-size:13px;line-height:1.8;margin-bottom:.8rem;color:var(--text)}
+.cours-section ul{margin:.4rem 0 .8rem 1.2rem}
+.cours-section li{font-size:13px;line-height:1.7;margin-bottom:3px}
+.cours-section strong{color:var(--navy);font-weight:600}
+.formula-box{background:var(--blue-bg);border:1px solid var(--blue-bd);border-radius:5px;padding:12px 16px;margin:.8rem 0;font-family:monospace;font-size:13px;line-height:1.9;color:#1e3a8a}
+.formula-title{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#3b82f6;margin-bottom:6px}
+.tip-box{background:var(--gold-pale);border:1px solid #e8c87a;border-radius:5px;padding:10px 14px;margin:.8rem 0;font-size:12.5px;line-height:1.7;color:#78350f}
+.tip-box strong{color:var(--gold)}
+.cours-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:12.5px}
+.cours-table th{background:var(--navy);color:#fff;padding:8px 12px;text-align:left;font-weight:500;font-size:11px;letter-spacing:.04em}
+.cours-table td{padding:7px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.cours-table tr:nth-child(even) td{background:#fafaf8}
+.cours-upload-section{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:18px 20px;margin-bottom:1rem}
+.cours-upload-section h3{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.pdf-viewer{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-top:1rem}
+.pdf-viewer-header{background:var(--navy);color:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;font-size:12px}
+.pdf-viewer-body{padding:16px;max-height:600px;overflow-y:auto;font-size:13px;line-height:1.8;white-space:pre-wrap;color:var(--text)}
+
+@media(max-width:750px){
+  .resolver-layout,.cours-layout{grid-template-columns:1fr}
+  .sidebar{order:2}.content-card,.result-card,.empty-state{order:1}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>ESG Learn — Plateforme Pédagogique</span>
+  <span><b>RNCP37158</b> · Expert en Ingénierie Patrimoniale · Promo 2024–2025</span>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">
+        <h1>ESG Learn</h1>
+        <p>Espace Pédagogique — Ingénierie Patrimoniale</p>
+      </div>
+    </div>
+    <div class="header-right">Épreuves Certifiantes<br>Blocs 1 · 2 · 3 · 4</div>
+  </div>
+</header>
+
+<div class="main-nav">
+  <div class="main-nav-inner">
+    <div class="nav-tab active" onclick="switchTab('resolver')">📝 Résoudre un sujet</div>
+    <div class="nav-tab" onclick="switchTab('cours')">📚 Mes cours</div>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+  <!-- ══ ONGLET RÉSOLVEUR ══ -->
+  <div id="tab-resolver" class="tab-content active">
+    <div class="resolver-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="scard">
+          <div class="scard-head">🔑 Accès IA</div>
+          <div class="scard-body">
+            <label class="form-label">Clé API Anthropic</label>
+            <div class="key-row">
+              <input type="password" id="apiKey" class="form-input" placeholder="sk-ant-api03-…" autocomplete="off">
+              <button class="toggle-btn" onclick="toggleKey()">👁</button>
+            </div>
+            <a class="key-link" href="https://console.anthropic.com/settings/keys" target="_blank">→ Obtenir une clé</a>
+            <label class="remember-row">
+              <input type="checkbox" id="rememberKey"> Mémoriser la clé sur cet appareil
+            </label>
+            <div class="status-row"><div class="dot" id="kDot"></div><span id="kStatus">Non renseignée</span></div>
+          </div>
+        </div>
+
+        <div class="scard">
+          <div class="scard-head">ℹ️ Comment ça marche</div>
+          <div class="scard-body" style="font-size:12px;line-height:1.8;color:var(--muted)">
+            <p style="margin-bottom:8px">1. Collez ou uploadez un <strong style="color:var(--text)">sujet RNCP</strong></p>
+            <p style="margin-bottom:8px">2. L'IA <strong style="color:var(--text)">résout le cas</strong> en suivant la méthodologie ESG</p>
+            <p>3. Chaque étape est <strong style="color:var(--text)">expliquée en détail</strong> avec les calculs</p>
+          </div>
+        </div>
+
+        <div class="scard">
+          <div class="scard-head">📊 Niveaux d'évaluation</div>
+          <div class="scard-body">
+            <div class="legend-item"><span class="lbadge lb-a">ACQUIS</span><span style="font-size:12px">Raisonnement cohérent, réponses argumentées</span></div>
+            <div class="legend-item"><span class="lbadge lb-p">PARTIEL</span><span style="font-size:12px">Cohérent mais incomplet</span></div>
+            <div class="legend-item"><span class="lbadge lb-n">NON ACQUIS</span><span style="font-size:12px">Incohérent ou sans justification</span></div>
+          </div>
+        </div>
+
+        <button class="btn-submit" id="btnGo" onclick="resoudre()" disabled>
+          <div class="spinner" id="sp"></div>
+          <span id="btnLbl">⚡ Résoudre ce sujet</span>
+        </button>
+      </aside>
+
+      <!-- CONTENU PRINCIPAL -->
+      <main>
+        <div class="content-card">
+          <div class="content-card-head">
+            <h2>Sujet à résoudre</h2>
+            <span class="badge-edc">EDC</span>
+          </div>
+          <div class="content-card-body">
+            <div class="info-chip">
+              💡 Collez n'importe quel sujet RNCP. L'IA va le résoudre de A à Z en suivant exactement la méthodologie de vos corrigés ESG, avec tous les calculs expliqués étape par étape.
+            </div>
+            <textarea id="sujetTxt" class="textarea-sujet"
+              placeholder="Collez ici le sujet complet à résoudre…&#10;&#10;Exemples de sujets :&#10;— Étude de cas agence bancaire avec indicateurs commerciaux (SWOT + plan d'action)&#10;— Dossier client patrimonial (retraite, fiscalité, succession, investissement)&#10;— Analyse de situation IR avec optimisation PER&#10;— Calcul de droits de succession et stratégie patrimoniale&#10;— Stratégie retraite Madelin / Fillon / PER"></textarea>
+            <div class="or-line">ou uploadez un fichier PDF / TXT</div>
+            <div class="upload-zone" id="sujetZone"
+                 onclick="document.getElementById('sujetIn').click()"
+                 ondragover="dg(event,'sujetZone')" ondragleave="dl('sujetZone')" ondrop="dp(event)">
+              <input type="file" id="sujetIn" accept=".txt,.pdf" onchange="onFile(this)">
+              <div class="uz-icon">📄</div>
+              <div class="uz-label">Cliquez ou déposez le sujet</div>
+              <div class="uz-sub">PDF ou TXT acceptés</div>
+            </div>
+            <div class="prog-bar" id="prog">
+              <div class="prog-track"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
+              <div class="prog-label" id="progLbl">Lecture en cours…</div>
+            </div>
+            <div id="sujetChips"></div>
+            <div class="errbox" id="errbox"></div>
+          </div>
+        </div>
+
+        <div id="result-wrap">
+          <div class="result-card">
+            <div class="result-header">
+              <h2>📋 Résolution — Épreuve Certifiante RNCP</h2>
+              <div style="display:flex;align-items:center;gap:8px">
+                <span class="mention-badge m-def" id="mentionBadge">—</span>
+                <button class="btn-copy" onclick="copyRes()">Copier</button>
+              </div>
+            </div>
+            <div class="result-body" id="resultBody"></div>
+          </div>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <div class="empty-icon">📝</div>
+          <h3>Aucun sujet soumis</h3>
+          <p>Collez ou uploadez un sujet RNCP pour que l'IA le résolve selon la méthodologie ESG avec tous les calculs expliqués.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ══ ONGLET COURS ══ -->
+  <div id="tab-cours" class="tab-content">
+    <div class="cours-layout">
+      <nav class="cours-nav">
+        <div class="cours-nav-title">📚 Chapitres</div>
+        <div class="cours-nav-item active" onclick="showChapitre('retraite')"><span class="cicon">🏦</span> La Retraite</div>
+        <div class="cours-nav-item" onclick="showChapitre('fiscalite')"><span class="cicon">📊</span> Fiscalité du Particulier</div>
+        <div class="cours-nav-item" onclick="showChapitre('patrimoine')"><span class="cicon">🏛️</span> Stratégie Patrimoniale</div>
+        <div class="cours-nav-item" onclick="showChapitre('mescours')"><span class="cicon">📁</span> Mes documents PDF</div>
+      </nav>
+
+      <div class="cours-content-area">
+
+        <!-- CHAPITRE RETRAITE -->
+        <div id="ch-retraite" class="cours-chapter active">
+          <div class="chapitre-header">
+            <h2>🏦 La Retraite</h2>
+            <p>Régimes obligatoires · Complémentaires · PER · Madelin · Fillon · Réversion</p>
+          </div>
+          <div class="chapitre-body">
+
+            <div class="cours-section">
+              <h3>1. Les régimes de retraite en France</h3>
+              <p>Le système français fonctionne par <strong>répartition</strong> pour les régimes obligatoires. Il est possible d'ajouter des cotisations facultatives par <strong>capitalisation</strong>.</p>
+              <p>La réforme 2023 a notamment :</p>
+              <ul>
+                <li>Relevé l'âge légal de départ progressivement de <strong>62 à 64 ans</strong></li>
+                <li>Accéléré l'allongement de la durée de cotisation à <strong>43 ans (172 trimestres)</strong> pour les nés en 1965 et après</li>
+                <li>Maintenu l'âge d'annulation de la décote à <strong>67 ans</strong></li>
+              </ul>
+              <div class="formula-box">
+                <div class="formula-title">📐 Calcul retraite de base salarié</div>
+                Retraite de base à taux plein = 50% du SAM (Salaire Annuel Moyen)<br>
+                SAM = 25 meilleures années de salaire (dans la limite du PASS)<br>
+                Montant maximum 2025 = 50% × PASS = 1 962,50€/mois brut<br>
+                1 trimestre = 150 × SMIC horaire brut = 1 782€ (jan. 2025)
+              </div>
+            </div>
+
+            <div class="cours-section">
+              <h3>2. Retraite complémentaire AGIRC-ARRCO (salariés)</h3>
+              <p>Système par points. Valeurs 2025 :</p>
+              <div class="formula-box">
+                <div class="formula-title">📐 AGIRC-ARRCO 2025</div>
+                Valeur d'achat du point = 20,1877€<br>
+                Valeur de restitution du point = 1,4386€<br>
+                Cotisations : 6,2% sur Tranche 1 (≤ 1 PASS) + 17% sur Tranche 2 (&gt; 1 PASS jusqu'à 8 PASS)<br><br>
+                Exemple : Salaire 120 000€, PASS 47 100€<br>
+                T1 : 47 100 × 6,2% = 2 920,20€<br>
+                T2 : (120 000 – 47 100) × 17% = 12 393€<br>
+                Total cotisations = 15 313,20€<br>
+                Points acquis = 15 313,20 / 20,1877 = 758,54 points<br>
+                Valeur annuelle = 758,54 × 1,4386 = 1 091,24€
+              </div>
+            </div>
+
+            <div class="cours-section">
+              <h3>3. Cadre fiscal Madelin (TNS)</h3>
+              <p><strong>Éligibles :</strong> professions libérales, exploitants individuels, gérants majoritaires SARL, conjoint collaborateur.</p>
+              <div class="formula-box">
+                <div class="formula-title">📐 Calcul disponible Madelin retraite (PASS 2025 : 47 100€)</div>
+                Si BNC &lt; 1 PASS → disponible = 10% × 1 PASS = 4 710€<br>
+                Si 1 PASS ≤ BNC ≤ 8 PASS → disponible = 10% × BNC + 15% × (BNC – 1 PASS)<br>
+                Si BNC &gt; 8 PASS (376 800€) → disponible max = 10% × 8 PASS + 15% × 7 PASS<br><br>
+                Exemple BNC 90 000€ :<br>
+                90 000 × 10% = 9 000€<br>
+                (90 000 – 47 100) × 15% = 6 435€<br>
+                Disponible Madelin = 15 435€
+              </div>
+              <div class="tip-box"><strong>⚠️ Attention :</strong> les cotisations Madelin passent en charges/dépenses sur le BNC et diminuent le bénéfice imposable. Les prestations (rentes) sont fiscalisées en sortie.</div>
+            </div>
+
+            <div class="cours-section">
+              <h3>4. Cadre fiscal Fillon (universel)</h3>
+              <p>Régime universel : tous y ont droit, même sans activité professionnelle.</p>
+              <div class="formula-box">
+                <div class="formula-title">📐 Calcul disponible Fillon</div>
+                Disponible = 10% des revenus N-1 (après abattement 10%) jusqu'à 8 PASS<br>
+                Si revenus &lt; 1 PASS → disponible = 10% du PASS = 4 710€<br>
+                Possibilité de récupérer les plafonds des 3 années précédentes<br>
+                Possibilité d'utiliser le disponible fiscal du conjoint (case 6QR)<br><br>
+                Déductions du disponible Fillon :<br>
+                – Abondement employeur PERECOL (case 6QT)<br>
+                – Fraction &gt; 15% du disponible supplémentaire Madelin (case 6OS)<br>
+                – Versements sur Article 83 / PERO
+              </div>
+            </div>
+
+            <div class="cours-section">
+              <h3>5. Le PER — Plan d'Épargne Retraite (loi PACTE 2019)</h3>
+              <p>Remplace depuis oct. 2019 : Madelin, PERP, PREFON, COREM, PERCO, Article 83.</p>
+              <h4>3 compartiments</h4>
+              <ul>
+                <li><strong>Compartiment individuel</strong> : versements volontaires Madelin + Fillon</li>
+                <li><strong>Compartiment collectif</strong> : transferts PERCO / PERE-COL</li>
+                <li><strong>Compartiment catégoriel</strong> : transferts Article 83 / PERO</li>
+              </ul>
+              <h4>Sorties anticipées (déblocage exceptionnel)</h4>
+              <ul>
+                <li>Invalidité (souscripteur, conjoint, partenaire PACS, enfants)</li>
+                <li>Décès du conjoint ou partenaire PACS</li>
+                <li>Expiration droits chômage</li>
+                <li>Surendettement</li>
+                <li>Liquidation judiciaire</li>
+                <li><strong>Acquisition résidence principale</strong> (sauf droits issus versements obligatoires)</li>
+              </ul>
+              <h4>PER Assurance vs Compte-Titres</h4>
+              <table class="cours-table">
+                <tr><th>Critère</th><th>PER Assurance</th><th>PER Compte-Titres</th></tr>
+                <tr><td>Fonds euro</td><td>✅ Oui</td><td>❌ Non</td></tr>
+                <tr><td>Clause bénéficiaire</td><td>✅ Oui (fiscalité AV)</td><td>❌ Non (DMTG)</td></tr>
+                <tr><td>Décès avant liquidation</td><td>990i (&lt;70 ans) / 757b (&gt;70 ans)</td><td>DMTG classique</td></tr>
+                <tr><td>Profil</td><td>Tous profils</td><td>Profils dynamiques uniquement</td></tr>
+              </table>
+            </div>
+
+            <div class="cours-section">
+              <h3>6. La réversion de retraite</h3>
+              <div class="formula-box">
+                <div class="formula-title">📐 Réversion régime de base (salariés)</div>
+                Taux de réversion = 54% de la pension de base du défunt<br>
+                Plafond de ressources (2025) : 24 710,40€ seul(e) / 38 771,20€ en couple<br>
+                Si (ressources + réversion) &gt; plafond → réversion réduite à hauteur du dépassement<br>
+                En cas de mariages multiples : répartition au prorata de la durée de chaque mariage<br><br>
+                AGIRC-ARRCO : taux 60%, pas de condition de ressources, pas de réversion en cas de remariage
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CHAPITRE FISCALITÉ -->
+        <div id="ch-fiscalite" class="cours-chapter">
+          <div class="chapitre-header">
+            <h2>📊 Fiscalité du Particulier</h2>
+            <p>IR · Quotient familial · Barème · PER · IFI · Prélèvement à la source</p>
+          </div>
+          <div class="chapitre-body">
+
+            <div class="cours-section">
+              <h3>1. Calcul de l'Impôt sur le Revenu (IR)</h3>
+              <p>L'administration fiscale distingue 3 étapes :</p>
+              <div class="formula-box">
+                <div class="formula-title">📐 Étapes de calcul de l'IR</div>
+                ÉTAPE 1 — Revenu Net Imposable<br>
+                = Revenus bruts (salaires nets × 90% ou –14 426€ max, BNC/BIC brut, fonciers…)<br>
+                – Charges déductibles (pensions alimentaires, cotisations PER…)<br>
+                – Abattements spéciaux<br><br>
+                ÉTAPE 2 — Impôt Brut<br>
+                Quotient Familial (QF) = Revenu Net Imposable / Nombre de parts<br>
+                Application du barème progressif pour 1 part<br>
+                × Nombre de parts<br><br>
+                ÉTAPE 3 — Impôt Net<br>
+                = Impôt brut – Décote – Réductions d'impôt + CEHR<br>
+                + Crédits d'impôt (remboursés si supérieurs à l'IR)
+              </div>
+            </div>
+
+            <div class="cours-section">
+              <h3>2. Barème IR 2025 (revenus 2024)</h3>
+              <table class="cours-table">
+                <tr><th>Tranche du QF (1 part)</th><th>Taux</th></tr>
+                <tr><td>Jusqu'à 11 497€</td><td>0%</td></tr>
+                <tr><td>De 11 497€ à 29 315€</td><td>11%</td></tr>
+                <tr><td>De 29 315€ à 83 823€</td><td>30%</td></tr>
+                <tr><td>De 83 823€ à 177 106€</td><td>41%</td></tr>
+                <tr><td>Au-delà de 177 106€</td><td>45%</td></tr>
+              </table>
+              <div class="tip-box"><strong>TMI</strong> = Tranche Marginale d'Imposition. En approche patrimoniale, toujours identifier la TMI du client et calculer la marge en € avant la tranche supérieure.</div>
+            </div>
+
+            <div class="cours-section">
+              <h3>3. Quotient Familial</h3>
+              <table class="cours-table">
+                <tr><th>Situation</th><th>Parts</th></tr>
+                <tr><td>Célibataire</td><td>1</td></tr>
+                <tr><td>Couple marié/pacsé</td><td>2</td></tr>
+                <tr><td>+ 1er enfant</td><td>+0,5</td></tr>
+                <tr><td>+ 2e enfant</td><td>+0,5</td></tr>
+                <tr><td>+ 3e enfant et suivants</td><td>+1 par enfant</td></tr>
+                <tr><td>Parent isolé</td><td>+0,5</td></tr>
+                <tr><td>Enfant handicapé (CMI invalidité)</td><td>+0,5</td></tr>
+                <tr><td>Garde alternée</td><td>+0,25</td></tr>
+              </table>
+              <p>Plafonnement du QF : <strong>1 791€ par demi-part</strong> au-delà de 2 parts (couple sans enfant)</p>
+            </div>
+
+            <div class="cours-section">
+              <h3>4. Abattements</h3>
+              <ul>
+                <li><strong>Salariés :</strong> 10% des salaires nets, plafonné à <strong>14 426€</strong> par déclarant. Minimum 504€.</li>
+                <li><strong>Exception :</strong> Gérants majoritaires SARL/EURL → déclarent en Traitements et Salaires → ont droit à l'abattement 10%</li>
+                <li><strong>TNS (BNC/BIC/BA) :</strong> Aucun abattement de 10%</li>
+              </ul>
+            </div>
+
+            <div class="cours-section">
+              <h3>5. CEHR — Contribution Exceptionnelle sur les Hauts Revenus</h3>
+              <div class="formula-box">
+                <div class="formula-title">📐 Barème CEHR</div>
+                Célibataire :<br>
+                – 0 à 250 000€ : 0%<br>
+                – 250 000 à 500 000€ : 3%<br>
+                – Au-delà de 500 000€ : 4%<br><br>
+                Couple :<br>
+                – 0 à 500 000€ : 0%<br>
+                – 500 000 à 1 000 000€ : 3%<br>
+                – Au-delà de 1 000 000€ : 4%
+              </div>
+            </div>
+
+            <div class="cours-section">
+              <h3>6. Optimisation fiscale PER</h3>
+              <div class="formula-box">
+                <div class="formula-title">📐 Calcul montant PER pour supprimer une tranche</div>
+                1. Calculer la part de RNI soumise à la TMI cible (ex : 41%)<br>
+                2. Déduire l'effet des réductions d'impôt et plafonnement QF<br>
+                   → Ces montants ont été imputés après barème. Pour les retrouver avant :<br>
+                   Montant avant barème = Réductions / taux TMI<br>
+                3. Montant à placer = Part soumise à la TMI – montant avant barème<br><br>
+                Exemple : 25 354€ soumis à 41%, réductions de 4 082€<br>
+                4 082 / 0,41 = 9 956€ (avant barème)<br>
+                Montant à placer = 25 354 – 9 956 = 15 398€
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CHAPITRE PATRIMOINE -->
+        <div id="ch-patrimoine" class="cours-chapter">
+          <div class="chapitre-header">
+            <h2>🏛️ Stratégie Patrimoniale</h2>
+            <p>Succession · Donation · Immobilier · Assurance Vie · Optimisation</p>
+          </div>
+          <div class="chapitre-body">
+
+            <div class="cours-section">
+              <h3>1. Méthodologie de l'analyse patrimoniale</h3>
+              <p>Il n'y a pas d'analyse patrimoniale possible sans :</p>
+              <ul>
+                <li>Un <strong>recueil complet d'informations</strong> (situation personnelle, familiale, patrimoniale, fiscale)</li>
+                <li>Une <strong>définition claire des objectifs</strong> du client (court, moyen, long terme)</li>
+                <li>Des <strong>constats de qualité</strong> appuyés de chiffres précis</li>
+              </ul>
+              <div class="tip-box"><strong>Règle d'or :</strong> Ne jamais parler de «produits» avant d'avoir présenté les constats puis l'analyse. Les chiffres présentés doivent rendre évidentes les préconisations qui suivront.</div>
+            </div>
+
+            <div class="cours-section">
+              <h3>2. Succession — Calculs clés</h3>
+              <div class="formula-box">
+                <div class="formula-title">📐 Droits de succession</div>
+                Actif successoral net = Actif brut – Passif (dettes, frais funéraires forfait 1 500€)<br><br>
+                Abattements (en ligne directe) :<br>
+                – Enfant : 100 000€ (tous les 15 ans)<br>
+                – Conjoint / partenaire PACS : exonération totale<br>
+                – Petit-enfant : 1 594€ (31 865€ en représentation)<br>
+                – Neveu/nièce : 7 967€<br><br>
+                Barème en ligne directe (après abattement) :<br>
+                – 0 à 8 072€ : 5%<br>
+                – 8 072 à 12 109€ : 10%<br>
+                – 12 109 à 15 932€ : 15%<br>
+                – 15 932 à 552 324€ : 20%<br>
+                – 552 324 à 902 838€ : 30%<br>
+                – 902 838 à 1 805 677€ : 40%<br>
+                – Au-delà : 45%
+              </div>
+            </div>
+
+            <div class="cours-section">
+              <h3>3. Assurance Vie — Fiscalité</h3>
+              <div class="formula-box">
+                <div class="formula-title">📐 Fiscalité AV — Décès (articles 990i et 757b)</div>
+                Versements avant 70 ans (art. 990i) :<br>
+                – Abattement de 152 500€ par bénéficiaire<br>
+                – De 152 500€ à 852 500€ : 20%<br>
+                – Au-delà de 852 500€ : 31,25%<br><br>
+                Versements après 70 ans (art. 757b) :<br>
+                – Abattement global 30 500€ (tous bénéficiaires confondus)<br>
+                – Au-delà : droits de succession classiques<br>
+                – Les plus-values sont toujours exonérées
+              </div>
+            </div>
+
+            <div class="cours-section">
+              <h3>4. Taux d'endettement et capacité d'emprunt</h3>
+              <div class="formula-box">
+                <div class="formula-title">📐 Calculs crédit immobilier</div>
+                Taux d'endettement = (Total mensualités / Revenus nets mensuels) × 100<br>
+                Limite légale HCSF : 35% (assurance comprise)<br><br>
+                Capacité de remboursement mensuelle max = Revenus nets × 35%<br>
+                Capacité d'emprunt = Mensualité max × coefficient selon taux et durée<br><br>
+                Capacité d'épargne = Revenus nets – Charges fixes – Crédits en cours – Train de vie<br><br>
+                CRD (Capital Restant Dû) = Capital initial × [(1+taux)^n – (1+taux)^p] / [(1+taux)^n – 1]<br>
+                (n = durée totale en mois, p = mois déjà écoulés)
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- MES DOCUMENTS PDF -->
+        <div id="ch-mescours" class="cours-chapter">
+          <div class="chapitre-header">
+            <h2>📁 Mes documents PDF</h2>
+            <p>Uploadez vos propres PDF de cours pour les consulter ici</p>
+          </div>
+          <div class="chapitre-body">
+            <div class="cours-upload-section">
+              <h3>📤 Ajouter un document</h3>
+              <div class="upload-zone" id="pdfZone"
+                   onclick="document.getElementById('pdfIn').click()"
+                   ondragover="dg(event,'pdfZone')" ondragleave="dl('pdfZone')" ondrop="dpPdf(event)">
+                <input type="file" id="pdfIn" accept=".txt,.pdf" multiple onchange="onPdfFile(this)">
+                <div class="uz-icon">📄</div>
+                <div class="uz-label">Cliquez ou déposez vos PDF de cours</div>
+                <div class="uz-sub">PDF ou TXT acceptés</div>
+              </div>
+              <div class="prog-bar" id="pdfProg">
+                <div class="prog-track"><div class="prog-fill" id="pdfFill" style="width:0%"></div></div>
+                <div class="prog-label" id="pdfLbl">Lecture…</div>
+              </div>
+            </div>
+            <div id="pdfDocs"></div>
+            <div id="pdfEmpty" style="text-align:center;padding:3rem;color:var(--muted);font-size:13px">
+              <div style="font-size:36px;margin-bottom:1rem;opacity:.4">📂</div>
+              <p>Aucun document chargé. Uploadez vos PDF de cours ci-dessus.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- fin cours-content-area -->
+    </div><!-- fin cours-layout -->
+  </div><!-- fin tab-cours -->
+
+</div><!-- fin page-wrap -->
+
+<script>
+// ─── PDF.js ──────────────────────────────────────────────────────────────────
+if(typeof pdfjsLib!=='undefined')
+  pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+// ─── Clé API ─────────────────────────────────────────────────────────────────
+const savedKey=localStorage.getItem('esg_api_key');
+if(savedKey){document.getElementById('apiKey').value=savedKey;document.getElementById('rememberKey').checked=true}
+document.getElementById('apiKey').addEventListener('input',chkKey);
+document.getElementById('rememberKey').addEventListener('change',function(){
+  if(this.checked)localStorage.setItem('esg_api_key',document.getElementById('apiKey').value.trim());
+  else localStorage.removeItem('esg_api_key');
+});
+function toggleKey(){const i=document.getElementById('apiKey');i.type=i.type==='password'?'text':'password'}
+function chkKey(){
+  const v=document.getElementById('apiKey').value.trim();
+  const dot=document.getElementById('kDot'),st=document.getElementById('kStatus'),inp=document.getElementById('apiKey');
+  if(document.getElementById('rememberKey').checked)localStorage.setItem('esg_api_key',v);
+  if(v.startsWith('sk-ant-')&&v.length>20){dot.className='dot ok';st.textContent='Clé valide ✓';inp.classList.add('ok')}
+  else if(v.length){dot.className='dot warn';st.textContent='Format incorrect';inp.classList.remove('ok')}
+  else{dot.className='dot';st.textContent='Non renseignée';inp.classList.remove('ok')}
+  chkReady();
+}
+if(savedKey)chkKey();
+
+// ─── Navigation ──────────────────────────────────────────────────────────────
+function switchTab(t){
+  document.querySelectorAll('.tab-content').forEach(e=>e.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(e=>e.classList.remove('active'));
+  document.getElementById('tab-'+t).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+function showChapitre(id){
+  document.querySelectorAll('.cours-chapter').forEach(e=>e.classList.remove('active'));
+  document.querySelectorAll('.cours-nav-item').forEach(e=>e.classList.remove('active'));
+  document.getElementById('ch-'+id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+// ─── Drag & drop ─────────────────────────────────────────────────────────────
+function dg(e,id){e.preventDefault();document.getElementById(id).classList.add('over')}
+function dl(id){document.getElementById(id).classList.remove('over')}
+function dp(e){e.preventDefault();document.getElementById('sujetZone').classList.remove('over');if(e.dataTransfer.files.length)processFile(e.dataTransfer.files[0])}
+function dpPdf(e){e.preventDefault();document.getElementById('pdfZone').classList.remove('over');if(e.dataTransfer.files.length)Array.from(e.dataTransfer.files).forEach(f=>addPdfDoc(f))}
+function onFile(inp){if(inp.files.length)processFile(inp.files[0])}
+function onPdfFile(inp){if(inp.files.length)Array.from(inp.files).forEach(f=>addPdfDoc(f))}
+
+// ─── Sujet ───────────────────────────────────────────────────────────────────
+let sujetFile=null;
+async function processFile(file){
+  document.getElementById('prog').style.display='block';
+  try{const t=await readF(file,'main');sujetFile={name:file.name,size:file.size,text:t};renderSujetChip()}
+  catch(e){showErr('Erreur lecture : '+e.message)}
+  document.getElementById('prog').style.display='none';
+  chkReady();
+}
+function renderSujetChip(){
+  const c=document.getElementById('sujetChips'),z=document.getElementById('sujetZone');
+  if(!sujetFile){c.innerHTML='';z.classList.remove('loaded');return}
+  c.innerHTML=`<div class="file-chip"><span class="chip-name">📄 ${sujetFile.name}</span><span style="display:flex;align-items:center;gap:6px;font-size:10px;color:var(--light)">${fmtSz(sujetFile.size)}<span class="chip-del" onclick="delSujet()">×</span></span></div>`;
+  z.classList.add('loaded');
+}
+function delSujet(){sujetFile=null;renderSujetChip();chkReady()}
+document.getElementById('sujetTxt').addEventListener('input',chkReady);
+function chkReady(){
+  const key=document.getElementById('apiKey').value.trim();
+  const hasSujet=document.getElementById('sujetTxt').value.trim().length>30||sujetFile!==null;
+  document.getElementById('btnGo').disabled=!(key.length>20&&hasSujet)||busy;
+}
+
+// ─── PDF docs cours ───────────────────────────────────────────────────────────
+let pdfDocs=[];
+async function addPdfDoc(file){
+  document.getElementById('pdfProg').style.display='block';
+  try{
+    const t=await readF(file,'pdf');
+    pdfDocs.push({name:file.name,text:t});
+    renderPdfDocs();
+  }catch(e){alert('Erreur lecture "'+file.name+'" : '+e.message)}
+  document.getElementById('pdfProg').style.display='none';
+}
+function renderPdfDocs(){
+  const c=document.getElementById('pdfDocs'),empty=document.getElementById('pdfEmpty');
+  empty.style.display=pdfDocs.length?'none':'block';
+  c.innerHTML=pdfDocs.map((d,i)=>`
+    <div class="pdf-viewer">
+      <div class="pdf-viewer-header">
+        <span>📄 ${d.name}</span>
+        <span class="chip-del" onclick="delPdf(${i})" style="cursor:pointer;font-size:18px">×</span>
+      </div>
+      <div class="pdf-viewer-body">${escHtml(d.text.substring(0,15000))}${d.text.length>15000?'\n\n[... document tronqué pour l\'affichage ...]':''}</div>
+    </div>`).join('');
+}
+function delPdf(i){pdfDocs.splice(i,1);renderPdfDocs()}
+
+// ─── Lecture fichiers ─────────────────────────────────────────────────────────
+async function readF(file,type){
+  const ext=file.name.split('.').pop().toLowerCase();
+  if(ext==='pdf')return await readPDF(file,type);
+  return await new Promise((res,rej)=>{const r=new FileReader();r.onload=e=>res(e.target.result);r.onerror=()=>rej(new Error('Impossible de lire'));r.readAsText(file,'UTF-8')});
+}
+async function readPDF(file,type){
+  if(typeof pdfjsLib==='undefined')throw new Error('PDF.js non disponible');
+  const fId=type==='pdf'?'pdfFill':'progFill',lId=type==='pdf'?'pdfLbl':'progLbl';
+  const buf=await file.arrayBuffer();
+  const pdf=await pdfjsLib.getDocument({data:buf}).promise;
+  let txt='';
+  for(let p=1;p<=pdf.numPages;p++){
+    const pg=await pdf.getPage(p);
+    const ct=await pg.getTextContent();
+    txt+=ct.items.map(i=>i.str).join(' ')+'\n';
+    const pct=Math.round(p/pdf.numPages*100);
+    document.getElementById(fId).style.width=pct+'%';
+    document.getElementById(lId).textContent='Page '+p+'/'+pdf.numPages;
+  }
+  if(!txt.trim())throw new Error('PDF scanné — utilisez un PDF avec texte sélectionnable');
+  return txt;
+}
+function fmtSz(b){if(b<1024)return b+' o';if(b<1048576)return(b/1024).toFixed(0)+' Ko';return(b/1048576).toFixed(1)+' Mo'}
+function escHtml(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+// ─── RÉSOLUTION ───────────────────────────────────────────────────────────────
+let busy=false;
+async function resoudre(){
+  if(busy)return;
+  busy=true;setLoading(true);hideErr();
+  const key=document.getElementById('apiKey').value.trim();
+  const sujet=sujetFile?sujetFile.text:document.getElementById('sujetTxt').value.trim();
+
+  const SYSTEM=`Tu es un expert senior en ingénierie patrimoniale diplômé de l'ESG, spécialisé dans les épreuves certifiantes RNCP37158.
+
+Tu résous des sujets d'épreuve en te basant sur la méthodologie exacte de l'ESG. Tu t'exprimes à la première personne, de façon naturelle et professionnelle, comme si C'EST TOI qui rédiges la réponse à l'examen.
+
+═══════════════════════════════════════════════
+MÉTHODOLOGIE ESG — GRAVÉE DANS TA MÉMOIRE
+═══════════════════════════════════════════════
+
+## ÉPREUVE TYPE AGENCE/COMMERCIAL (Bloc 1)
+Process obligatoire dans cet ordre :
+1. Analyse environnementale : population, CSP, tranches d'âge, équipement automobiles, familles monoparentales
+2. Analyse segmentation : comparer agence vs banque nationale (écarts en POINTS)
+3. Analyse activité : RDV, taux transformation, recommandation, ventes
+4. Analyse encours : épargne, crédit, assurance (évolutions en %)
+5. Diagnostic SWOT : Forces / Faiblesses / Opportunités / Menaces
+6. Plan d'action : 3 actions minimum avec tableau Objectifs / Moyens-Ressources / Critères de suivi
+
+## ÉPREUVE TYPE PATRIMONIALE (Bloc 2-3-4)
+Process obligatoire :
+1. Recueil et analyse de la situation (perso, familiale, patrimoniale, fiscale)
+2. Calculs : taux endettement, capacité épargne, retraite, IR, succession...
+3. Classification des objectifs par priorité (court / moyen / long terme)
+4. Stratégie : solutions chiffrées avec avantages et inconvénients
+5. Préconisations : justifiées par rapport au profil et aux objectifs
+
+═══════════════════════════════════════════════
+DONNÉES TECHNIQUES INTÉGRÉES (2025)
+═══════════════════════════════════════════════
+
+RETRAITE :
+- PASS 2025 = 47 100€ / SMIC horaire brut = ~11,88€
+- 1 trimestre = 150 × SMIC = 1 782€
+- Retraite base max = 50% × PASS/12 = 1 962,50€/mois
+- AGIRC-ARRCO : valeur achat point = 20,1877€ / valeur service = 1,4386€
+- Cotisations AGIRC-ARRCO : 6,2% sur T1 (≤1 PASS) + 17% sur T2 (1 à 8 PASS)
+- Réforme 2023 : âge légal 64 ans, 172 trimestres pour nés en 1965+
+- Réversion base : 54%, plafond ressources 24 710,40€ seul / 38 771,20€ couple
+- Réversion AGIRC-ARRCO : 60%, sans condition de ressources, sans remariage
+
+MADELIN (TNS) :
+- Disponible = 10% BNC + 15% fraction entre 1 et 8 PASS
+- Si BNC < 1 PASS : disponible = 10% × 1 PASS = 4 710€ (minimum)
+- Si BNC > 8 PASS (376 800€) : maximum = 87 135€
+
+FILLON (universel) :
+- Disponible = 10% revenus N-1 (après abattement) jusqu'à 8 PASS
+- Récupération plafonds 3 années précédentes
+- Possibilité conjoint (case 6QR)
+- Déductions : abondement PERECOL (6QT), fraction Madelin >15% (6OS)
+
+FISCALITÉ IR 2025 (revenus 2024) :
+- Abattement salariés : 10%, plafonné à 14 426€ (minimum 504€)
+- Gérant majoritaire SARL/EURL : bénéficie aussi de l'abattement 10%
+- Barème : 0% (<11 497€) / 11% (11 497-29 315€) / 30% (29 315-83 823€) / 41% (83 823-177 106€) / 45% (>177 106€)
+- Plafonnement QF : 1 791€ par demi-part
+- CEHR célibataire : 0% (<250K) / 3% (250-500K) / 4% (>500K)
+- CEHR couple : 0% (<500K) / 3% (500K-1M) / 4% (>1M)
+- Apprentis : exonérés jusqu'à 21 273€
+
+SUCCESSION :
+- Abattement enfant : 100 000€ tous les 15 ans
+- Abattement conjoint/PACS : exonération totale
+- Abattement neveu/nièce : 7 967€
+- Barème ligne directe (après abattement) : 5% (<8 072€) / 10% / 15% / 20% (jusqu'à 552 324€) / 30% / 40% / 45%
+
+ASSURANCE VIE :
+- 990i (<70 ans) : abattement 152 500€/bénéficiaire, puis 20% jusqu'à 852 500€, puis 31,25%
+- 757b (>70 ans) : abattement global 30 500€, puis droits succession classiques
+- Plus-values toujours exonérées en cas de décès
+
+CRÉDIT :
+- Taux endettement max HCSF = 35% (assurance comprise)
+- Taux endettement = (mensualités totales / revenus nets mensuels) × 100
+
+═══════════════════════════════════════════════
+FORMAT DE TA RÉPONSE
+═══════════════════════════════════════════════
+
+Rédige à la PREMIÈRE PERSONNE, de façon naturelle et professionnelle.
+Structure avec des titres clairs (## pour sections principales, ### pour sous-sections).
+Pour chaque calcul : montre la FORMULE puis le RÉSULTAT dans un bloc calcul.
+Après chaque calcul ou analyse, explique dans un bloc "💡 Pourquoi j'ai fait ça" ce qui justifie ta démarche.
+À la fin, donne la mention globale : ACQUIS / PARTIELLEMENT ACQUIS / NON ACQUIS avec justification.
+Sois complet, rigoureux et pédagogique.`;
+
+  const USER=`Voici le sujet à résoudre. Traite-le de A à Z selon la méthodologie ESG, en première personne, avec tous les calculs détaillés et les explications de ta démarche à chaque étape.
+
+SUJET :
+${sujet}`;
+
+  try{
+    const resp=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-opus-4-5',max_tokens:8000,system:SYSTEM,messages:[{role:'user',content:USER}]})
+    });
+    if(!resp.ok){const e=await resp.json().catch(()=>({}));throw new Error(e.error?.message||'Erreur HTTP '+resp.status)}
+    const data=await resp.json();
+    afficher(data.content.map(b=>b.text||'').join(''));
+  }catch(e){
+    let m=e.message;
+    if(m.includes('401')||m.includes('auth'))m='Clé API invalide — vérifiez sur console.anthropic.com';
+    else if(m.includes('429'))m='Limite de requêtes atteinte — attendez quelques secondes';
+    else if(m.includes('fetch')||m.includes('network')||m.includes('Failed'))m='Erreur réseau — vérifiez votre connexion';
+    showErr(m);
+  }finally{busy=false;setLoading(false)}
+}
+
+// ─── Affichage résultat ───────────────────────────────────────────────────────
+function afficher(text){
+  document.getElementById('emptyState').style.display='none';
+  const wrap=document.getElementById('result-wrap');
+  wrap.style.display='block';
+  const badge=document.getElementById('mentionBadge');
+  const u=text.toUpperCase();
+  if(u.includes('NON ACQUIS')){badge.textContent='✗ Non acquis';badge.className='mention-badge m-non'}
+  else if(u.includes('PARTIELLEMENT ACQUIS')){badge.textContent='◑ Partiellement acquis';badge.className='mention-badge m-partiel'}
+  else if(u.includes('ACQUIS')){badge.textContent='✓ Acquis';badge.className='mention-badge m-acquis'}
+  document.getElementById('resultBody').innerHTML=renderMD(text);
+  wrap.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function renderMD(t){
+  t=t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  // Blocs calcul
+  t=t.replace(/```(?:calcul|calc|math|formule)?\n?([\s\S]*?)```/g,(_,c)=>`<div class="calc-block"><div class="calc-title">📐 Calcul détaillé</div>${c.replace(/\n/g,'<br>')}</div>`);
+  // Blocs pourquoi
+  t=t.replace(/💡 Pourquoi[^\n]*\n?([\s\S]*?)(?=\n##|\n###|\n💡|$)/g,(_,c)=>`<div class="pourquoi-block"><div class="pourquoi-title">💡 Pourquoi j'ai fait ça</div>${c.trim().replace(/\n/g,'<br>')}</div>`);
+  // Titres
+  t=t.replace(/^## (.+)$/gm,'<h2>$1</h2>');
+  t=t.replace(/^### (.+)$/gm,'<h3>$1</h3>');
+  t=t.replace(/^#### (.+)$/gm,'<h4>$1</h4>');
+  // Listes
+  t=t.replace(/^[-*•] (.+)$/gm,'<li>$1</li>');
+  t=t.replace(/(<li>.*?<\/li>\n?)+/g,m=>'<ul>'+m+'</ul>');
+  // Gras
+  t=t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  // Italique
+  t=t.replace(/\*(.+?)\*/g,'<em>$1</em>');
+  // Séparateur
+  t=t.replace(/^---$/gm,'<hr>');
+  // Paragraphes
+  t=t.replace(/\n{2,}/g,'</p><p>');
+  t='<p>'+t+'</p>';
+  // Cleanup
+  ['h2','h3','h4','ul','hr'].forEach(tag=>{
+    t=t.replace(new RegExp('<p>(<'+tag+'>)','g'),'$1');
+    t=t.replace(new RegExp('(<\/'+tag+'>)<\/p>','g'),'$1');
+  });
+  t=t.replace(/<p>(<div class="calc-block")/g,'$1');
+  t=t.replace(/(<\/div>)<\/p>/g,'$1');
+  t=t.replace(/<p>(<div class="pourquoi-block")/g,'$1');
+  t=t.replace(/<p><\/p>/g,'');
+  return t;
+}
+
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+function setLoading(on){
+  document.getElementById('sp').style.display=on?'block':'none';
+  document.getElementById('btnLbl').textContent=on?'Résolution en cours…':'⚡ Résoudre ce sujet';
+  if(!on)chkReady();else document.getElementById('btnGo').disabled=true;
+}
+function showErr(m){const b=document.getElementById('errbox');b.style.display='block';b.innerHTML='<strong>❌</strong> '+m}
+function hideErr(){document.getElementById('errbox').style.display='none'}
+function copyRes(){
+  navigator.clipboard.writeText(document.getElementById('resultBody').innerText).then(()=>{
+    const b=document.querySelector('.btn-copy');b.textContent='✓ Copié';setTimeout(()=>b.textContent='Copier',2000);
+  });
+}
+</script>
+</body>
+</html>
