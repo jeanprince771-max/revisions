@@ -2,20 +2,16 @@
 name: traitement-de-cas
 description: |
   Traite un cas, un exercice, une étude de cas, un sujet d'examen ou un dossier
-  de A à Z : bonnes réponses, calculs détaillés posés étape par étape, meilleure
-  solution ou optimisation possible, le tout écrit comme un humain sous
-  contrainte plutôt que comme une IA. Utiliser ce skill dès qu'un énoncé, un cas
-  pratique, une étude de cas, un problème chiffré, un sujet d'examen ou un
-  dossier à monter est donné à traiter, dans n'importe quel domaine (gestion de
-  patrimoine, droit, commercial, management, finance, marketing, comptabilité,
-  etc.), même si l'utilisateur ne dit pas explicitement "traite ce cas". Se
-  déclenche aussi dès qu'il est question d'un traitement de cas, d'une copie ou
-  d'un corrigé à produire, d'un bloc de compétences ou d'un EDC (étude de cas)
-  dans un cadre d'examen ou de certification, en particulier le RNCP 37158
-  Expert en Ingénierie Patrimoniale (blocs BC01 à BC05). Ne pas utiliser pour
-  relire, noter ou détecter le plagiat dans un texte déjà rédigé par
-  l'utilisateur : ce skill produit un traitement complet à partir de l'énoncé,
-  il ne corrige pas une copie existante.
+  de A à Z : bonnes réponses, calculs détaillés étape par étape, meilleure
+  solution possible, écrit comme un humain sous contrainte plutôt que comme
+  une IA. À utiliser dès qu'un énoncé, un cas pratique, un problème chiffré ou
+  un dossier est donné à traiter, tout domaine confondu (patrimoine, droit,
+  commercial, management, finance, marketing, comptabilité), même sans
+  demande explicite de "traiter ce cas". Se déclenche aussi pour un bloc de
+  compétences ou un EDC en contexte d'examen, notamment le RNCP 37158 Expert
+  en Ingénierie Patrimoniale (BC01 à BC05). Ne pas utiliser pour relire ou
+  détecter le plagiat dans un texte déjà écrit : ce skill produit un
+  traitement complet à partir de l'énoncé, il ne corrige pas une copie.
 ---
 
 # Traitement de cas
