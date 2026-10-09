@@ -1,0 +1,73 @@
+NOUVEAU WORDING — Campagne 1 Animation/VFX (v3)
+Angle corrige suite au retour de Garry : trop formel/corporate, "a cote de la plaque" pour les studios.
+Nouvel angle : peer-to-peer, studio a studio, business direct, s'appuie sur le profil de Garry
+(fondateur de studio d'animation, travaille avec de gros festivals) plutot qu'un pitch agence/consulting.
+
+=================================================
+MAIL 1 — J0
+=================================================
+Objet : Quick one, [FirstName] — studio to studio
+
+Hey [FirstName],
+
+I run an animation studio myself and work closely with some of the bigger festivals,
+so I keep an eye on who's doing interesting work out there — [CompanyName] caught my attention.
+
+I'm also helping a handful of studios like yours with international business development —
+mainly opening doors to co-pros, distribution and B2B deals they wouldn't easily reach alone.
+
+Worth a 15-min call to see if there's a fit? No deck, no pitch — just two people in the industry
+comparing notes.
+
+[Signature]
+
+=================================================
+LINKEDIN — J+1 (visite profil) puis J+3 (invitation)
+=================================================
+Message d'invitation :
+"Hey [FirstName] — saw [CompanyName]'s work, would be good to connect. Also sent you a short
+note by email about something that might be useful for you."
+
+=================================================
+MAIL 2 — J+5
+=================================================
+Objet : Re: studio to studio
+
+[FirstName],
+
+Following up quickly — the short version of what I do: I help studios like [CompanyName]
+get in front of the right people internationally (co-production partners, buyers, bigger clients)
+without spending months chasing cold leads yourselves.
+
+If budget/timing isn't right now, no worries at all — just let me know and I'll leave it there.
+
+[Signature]
+
+=================================================
+MAIL 3 — J+10 (A/B — a tester selon reactivite du lot)
+=================================================
+Version A (directe) :
+Objet : Last one from me, [FirstName]
+
+[FirstName], I'll keep this short — if opening up new international business for [CompanyName]
+is something you'd want to explore this year, I'm happy to jump on a call. If not, all good,
+I won't keep bugging you.
+
+[Signature]
+
+Version B (valeur ajoutee) :
+Objet : One more thought, [FirstName]
+
+[FirstName], one thing I've noticed working with other studios in [Region] — budgets for
+international co-pros and B2B deals are often there, just harder to reach without local
+industry contacts. That's exactly the gap I help close. Open to a quick chat if useful.
+
+[Signature]
+
+=================================================
+NOTES
+=================================================
+- Ton general : pair, pas vendeur. Pas de "consulting", pas de "offer", pas de jargon agence.
+- Toujours parler depuis la posture "je suis aussi dans l'animation" (credibilite de Garry).
+- Variable [Region] a adapter par lot (Espagne / Amerique latine / Europe de l'Est / Canada).
+- A tester sur un petit lot avant diffusion large, vu le retour precedent sur le ciblage France.
