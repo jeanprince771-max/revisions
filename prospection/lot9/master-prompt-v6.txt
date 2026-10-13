@@ -1,0 +1,74 @@
+MASTER PROMPT v6 — Studios d'animation et hybrides animation/jeu vidéo, pays lusophones
+
+Objectif
+Trouver des studios d'animation (et des studios hybrides animation + jeu vidéo) dans les pays lusophones, avec des contacts nominatifs et des adresses vérifiées. Ce prompt reprend les règles de la v5 (pays hispanophones) et les adapte au portugais.
+
+Pays cibles (20 contacts par pays, sauf indication contraire de Garry)
+1. Brésil
+2. Portugal
+3. Angola
+4. Moçambique
+5. Cabo Verde
+Si Garry ne veut que le Brésil et le Portugal, ne traiter que ces deux pays.
+
+Périmètre
+- Studios d'animation 2D, 3D, stop-motion, motion design narratif, séries et courts.
+- Studios hybrides animation + jeu vidéo : inclus. Un studio qui fait les deux est une cible.
+- Petites structures : 2 à 50 personnes. Exclure les grands groupes et les filiales de studios internationaux.
+- Exclure : agences de publicité qui font de la pub animée sans production propre, écoles, festivals, plateformes.
+- Un studio doit avoir une activité prouvée sur 2025-2026. Une preuve datée de plus de 2 ans = cas limite, à marquer C.
+
+Contacts
+- Nominatif obligatoire : prénom + nom + fonction.
+- Fonctions visées : fondateur, co-fondateur, CEO, diretor, sócio, produtor executivo, head of production, business development.
+- Pas de contact générique (info@, contato@) en contact principal. Le générique peut être noté dans une colonne à part.
+
+Adresses email
+Ordre de priorité :
+A. Adresse publiée par le studio, la fiche festival, le marché (MIFA, Annecy, Cartoon, Animamundi, Festival Anima, Ancine, Portugal Film Commission, etc.).
+B. Adresse publiée sur un domaine du studio, sans preuve de la personne.
+C. Adresse devinée à partir d'un format observé sur le domaine (prenom@, prenom.nom@, initiale+nom@).
+
+RÈGLE BLOQUANTE (héritée de la v5)
+Une adresse devinée (C) n'entre dans le fichier d'import que si son domaine a déjà répondu. Sinon, elle va dans contacts-serveur-muet.csv, sans import.
+
+Vérification
+- Vérifier le MX du domaine avant d'accepter toute adresse. Si le DNS ne répond pas, le noter : la vérification restera à faire dans Lemlist.
+- Ne jamais inventer un domaine. Si le domaine du studio n'est pas confirmé, ne pas deviner.
+- Une même adresse ne doit apparaître qu'une fois dans l'ensemble des fichiers.
+- Un seul contact par studio dans le fichier d'import principal. Les autres contacts du même studio vont dans un fichier à part, à envoyer plus tard.
+
+Icebreaker (obligatoire pour chaque contact)
+- Un fait précis et daté, sourcé : festival, prix, série, coproduction, client public, sortie récente.
+- Colonne icebreaker : une phrase en portugais (ou en anglais pour Cabo Verde si le studio publie en anglais).
+- Colonne icebreakerSourceUrl : l'URL de la source. Sans URL, pas de fait sourcé.
+- Si aucun fait sourcé n'existe, utiliser la phrase de repli, en la marquant icebreakerType = phrase de repli :
+  PT : "Estou a contactar alguns estúdios de animação no {pays}, e {studio} é um deles."
+  EN (Cabo Verde) : "I am reaching out to a handful of animation studios in {pays}, and {studio} is one of them."
+
+Format de sortie
+Un fichier CSV par pays, nommé pays-lot-animation-jeu.csv, avec les colonnes :
+email, firstName, lastName, companyName, jobTitle, linkedinUrl, secteur, icebreaker, icebreakerSourceUrl, icebreakerType, senderName, pays, langue, priorite, hybrideJeu, statutEmail, verificationMX, note
+
+- secteur : "estúdio de animação" (pour le portugais)
+- senderName : "Garry Yankson"
+- pays : nom en français (Brésil, Portugal, Angola, Moçambique, Cabo Verde)
+- langue : portugais (ou anglais pour Cabo Verde)
+- priorite : A, B ou C
+- hybrideJeu : non | oui - animation dominante | oui - jeu dominant
+- statutEmail : publiée | devinée | sans email
+- verificationMX : OK | non vérifié (DNS) | échec
+
+Fichiers de sortie supplémentaires
+- contacts-serveur-muet.csv : adresses devinées dont le domaine n'a pas répondu, sans import.
+- contacts-sans-email.csv : contacts trouvés sans adresse.
+- rapport.md : nombre de contacts par pays et par priorité, nombre de hybrides, nombre de cas limites, liste des domaines non vérifiés.
+
+Ce qu'il faut éviter
+- Ne pas mettre de variables Lemlist vides : icebreaker, firstName, companyName, senderName doivent être remplis pour chaque ligne.
+- Pas de variable {{secteur}} dans les textes espagnols ou portugais avec une valeur en français.
+- Pas de "Re:" en fausse réponse, pas de "Hey".
+- Pas de doublon d'adresse entre les pays.
+
+Rapport final
+Donner à Garry, en français : le nombre de contacts par pays, le nombre de cas hybrides, les cas limites, et ce qui reste à vérifier dans Lemlist.
