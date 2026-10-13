@@ -1,0 +1,104 @@
+MASTER PROMPT v7 — Studios d'animation et de jeu vidéo, Suède
+
+Objectif
+Trouver des studios d'animation et des studios de jeu vidéo en Suède, avec des contacts nominatifs et des adresses vérifiées. Ce prompt reprend les règles de la v5 (pays hispanophones) et de la v6 (pays lusophones), et les adapte à un marché où le jeu vidéo est dominant et l'animation plus restreinte.
+
+Langue de prospection
+Anglais. Les studios suédois travaillent en anglais au quotidien et répondent en anglais. Ne pas écrire en suédois : un mail en suédois approximatif fait plus de mal qu'un mail en anglais correct. La colonne langue vaut toujours "anglais".
+
+Volume cible
+60 contacts au total, répartis par pôle géographique (voir plus bas). Si Garry veut moins, garder les trois premiers pôles. Si la recherche remonte plus de 60 studios exploitables, livrer le surplus dans un fichier de réserve plutôt que de l'écarter.
+
+Répartition par pôle
+Le jeu vidéo suédois est organisé en clusters régionaux. Chercher pôle par pôle, c'est ce qui donne les meilleurs résultats.
+1. Stockholm et sa région — le plus gros volume, jeu et animation.
+2. Malmö et la Scanie — cluster Game Habitat, beaucoup de petits studios.
+3. Göteborg — jeu, animation et post-production.
+4. Skövde — écosystème Sweden Game Arena, studios très jeunes issus de l'université.
+5. Umeå et Skellefteå — cluster Arctic Game, nord du pays.
+6. Visby et Gotland — petit pôle issu de l'Uppsala University Campus Gotland.
+
+Périmètre
+- Studios de jeu vidéo indépendants : PC, console, mobile, VR. Inclus.
+- Studios d'animation 2D, 3D, stop-motion, séries et longs métrages. Inclus.
+- Studios hybrides animation + jeu, et studios de services (animation, rigging, VFX pour le compte d'autres productions). Inclus.
+- Taille : 2 à 50 personnes. C'est le cœur de cible.
+- Exclure les grands groupes et leurs filiales : EA DICE, King, Mojang, Avalanche Studios Group, Paradox Interactive, Massive Entertainment, Sharkmob, et toute société détenue par Embracer Group, Stillfront, MTG, Tencent, Microsoft ou Sony. Vérifier l'actionnariat avant de retenir un studio : en Suède beaucoup de petits studios ont été rachetés ces cinq dernières années et ne décident plus de leurs coproductions.
+- Exclure aussi : écoles, festivals, plateformes, agences de publicité sans production propre, éditeurs qui ne produisent pas.
+- Un studio doit avoir une activité prouvée sur 2025-2026. Une preuve datée de plus de deux ans = cas limite, à marquer C.
+
+Contacts
+- Nominatif obligatoire : prénom + nom + fonction.
+- Fonctions visées : founder, co-founder, CEO, managing director, studio head, executive producer, head of production, head of business development, publishing manager.
+- Pas de contact générique (info@, hello@, contact@) en contact principal. Le générique peut être noté dans une colonne à part.
+- Un seul contact par studio dans le fichier d'import principal. Les autres contacts du même studio vont dans un fichier à part, à envoyer plus tard.
+
+Adresses email
+Ordre de priorité :
+A. Adresse publiée par le studio, ou par une fiche de festival ou de marché professionnel.
+B. Adresse publiée sur un domaine du studio, sans preuve de rattachement à la personne.
+C. Adresse devinée à partir d'un format observé sur le domaine.
+
+Attention sur la Suède : le format prenom.nom@ est tellement répandu qu'on est tenté de deviner. Une adresse devinée reste une adresse devinée, même si le format est quasi certain.
+
+RÈGLE BLOQUANTE (héritée de la v5)
+Une adresse devinée (C) n'entre dans le fichier d'import que si son domaine a déjà répondu. Sinon, elle va dans contacts-serveur-muet.csv, sans import.
+
+Vérification
+- Vérifier le MX du domaine avant d'accepter toute adresse. Si le DNS ne répond pas, le noter : la vérification restera à faire dans Lemlist.
+- Ne jamais inventer un domaine. Si le domaine du studio n'est pas confirmé, ne pas deviner.
+- Une même adresse ne doit apparaître qu'une fois dans l'ensemble des fichiers.
+- Vérifier l'absence de doublon avec les lots déjà livrés (Canada, Espagne, Pologne, Tchéquie, Slovaquie, Roumanie, Bulgarie, Chili, Pérou, Colombie, Mexique, Argentine, Brésil, Portugal, Angola).
+
+Où chercher
+Sources spécifiques à la Suède, à utiliser en priorité :
+- Dataspelsbranschen (Swedish Games Industry) et son rapport annuel, qui liste les studios par région.
+- Game Habitat, à Malmö : annuaire des membres.
+- Sweden Game Arena, à Skövde.
+- Arctic Game, à Skellefteå.
+- Nordic Game (Malmö) : liste des exposants et des studios présents.
+- Swedish Film Institute (Svenska Filminstitutet) pour l'animation : films et séries financés.
+- Nordisk Film & TV Fond.
+- Fiches de festivals et marchés : Annecy et MIFA, Cartoon Forum, Cartoon Movie, Stockholms filmfestival.
+- Swedish Game Awards et Nordic Game Awards : les studios primés ou nommés.
+
+Icebreaker (obligatoire pour chaque contact)
+- Un fait précis et daté, sourcé : sortie de jeu, nomination ou prix, financement du Swedish Film Institute, coproduction, présence à un festival, série diffusée.
+- Colonne icebreaker : une phrase en anglais.
+- Colonne icebreakerSourceUrl : l'URL de la source. Sans URL, pas de fait sourcé.
+- Si aucun fait sourcé n'existe, utiliser la phrase de repli, en la marquant icebreakerType = phrase de repli :
+  "I am reaching out to a handful of {type} studios in Sweden, and {studio} is one of them."
+  où {type} vaut animation ou game selon le studio.
+
+Format de sortie
+Un fichier CSV par pôle géographique, nommé suede-{pole}-animation-jeu.csv, avec les colonnes :
+email, firstName, lastName, companyName, jobTitle, linkedinUrl, secteur, icebreaker, icebreakerSourceUrl, icebreakerType, senderName, pays, ville, langue, priorite, typeStudio, tailleEquipe, actionnariat, statutEmail, verificationMX, note
+
+- secteur : "animation studio" ou "game studio"
+- senderName : "Garry Yankson"
+- pays : Suède
+- ville : la ville du studio
+- langue : anglais
+- priorite : A, B ou C
+- typeStudio : animation | jeu | hybride
+- tailleEquipe : la fourchette observée, ou "non trouvée"
+- actionnariat : indépendant | détenu par {groupe}. Un studio détenu par un groupe ne doit pas se retrouver dans l'import.
+- statutEmail : publiée | devinée | sans email
+- verificationMX : OK | non vérifié (DNS) | échec
+
+Fichiers de sortie supplémentaires
+- contacts-serveur-muet.csv : adresses devinées dont le domaine n'a pas répondu, sans import.
+- contacts-sans-email.csv : contacts trouvés sans adresse.
+- contacts-second-par-studio.csv : les contacts supplémentaires des studios déjà représentés.
+- reserve.csv : les studios exploitables au-delà des 60.
+- rapport.md : nombre de contacts par pôle et par priorité, répartition animation / jeu / hybride, studios écartés pour cause d'actionnariat, cas limites, domaines non vérifiés.
+
+Ce qu'il faut éviter
+- Ne pas mettre de variables Lemlist vides : icebreaker, firstName, companyName, senderName doivent être remplis pour chaque ligne.
+- Pas de valeur en français dans une colonne qui sert de variable dans un texte anglais.
+- Pas de "Re:" en fausse réponse, pas de "Hey".
+- Pas de doublon d'adresse, ni à l'intérieur du lot suédois, ni avec les lots précédents.
+- Ne pas retenir un studio sans avoir vérifié qu'il est indépendant.
+
+Rapport final
+Donner à Garry, en français : le nombre de contacts par pôle, la répartition animation / jeu / hybride, les studios écartés et pourquoi, les cas limites, et ce qui reste à vérifier dans Lemlist.
