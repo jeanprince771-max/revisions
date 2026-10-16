@@ -112,7 +112,7 @@ Un seul format observé : prenom@ chez Turborilla. Toutes les autres adresses de
 ## Mise à jour du 16/10/2026 : adresses devinées pour les contacts sans email
 
 Garry a demandé de deviner les 65 contacts sans email. Résultat sur 63 contacts traités (les 2 autres sont écartés, voir plus bas) :
-- **49 adresses devinées** : 11 sur des domaines déjà confirmés (même format que le 1er contact du studio), 38 après recherche du domaine du studio.
+- **38 adresses devinées** : 11 sur des domaines déjà confirmés (même format que le 1er contact du studio), 27 après recherche du domaine du studio.
 - **3 adresses publiées trouvées** : anna@valiant.se (Valiant Game Studio), andreas@filmic.se (Filmic Animation), linda@leefilm.se (LEE Film). Elles passent dans l'import.
 - **22 contacts restent sans email** (15 premiers contacts, 6 seconds, 1 réserve) : aucun domaine propre trouvé (itch.io, Steam ou Behance seulement). Studios concernés : Double Up Studio, Studio Fyr, Valley Lodge Games, Rototoco, Frozen Maracuyas, Midnight Hub, Svargames, Dockhus Animation, Dazed Games, Nuggets Entertainment, Ember Paw Games, Speldosa Interactive, Solid Block of Power, Polysoup Interactive, Full Rogue.
 - **Sinnema Animation Studio écarté** (2 contacts) : le studio est basé à Berlin, hors périmètre Suède.
