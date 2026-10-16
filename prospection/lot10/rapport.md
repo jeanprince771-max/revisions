@@ -107,3 +107,26 @@ Un seul format observé : prenom@ chez Turborilla. Toutes les autres adresses de
   - la date de la version 1.0 de Valheim (Iron Gate), qui sert d'icebreaker.
 - **Localisations à confirmer :** Speldosa (Skövde), Cinematic et Filmic Animation (Stockholm).
 - **Sources uniques :** Valley Lodge, Rototoco et Frozen Maracuyas reposent sur une seule page de Game Habitat.
+
+
+## Mise à jour du 16/10/2026 : adresses devinées pour les contacts sans email
+
+Garry a demandé de deviner les 65 contacts sans email. Résultat sur 63 contacts traités (les 2 autres sont écartés, voir plus bas) :
+- **49 adresses devinées** : 11 sur des domaines déjà confirmés (même format que le 1er contact du studio), 38 après recherche du domaine du studio.
+- **3 adresses publiées trouvées** : anna@valiant.se (Valiant Game Studio), andreas@filmic.se (Filmic Animation), linda@leefilm.se (LEE Film). Elles passent dans l'import.
+- **22 contacts restent sans email** (15 premiers contacts, 6 seconds, 1 réserve) : aucun domaine propre trouvé (itch.io, Steam ou Behance seulement). Studios concernés : Double Up Studio, Studio Fyr, Valley Lodge Games, Rototoco, Frozen Maracuyas, Midnight Hub, Svargames, Dockhus Animation, Dazed Games, Nuggets Entertainment, Ember Paw Games, Speldosa Interactive, Solid Block of Power, Polysoup Interactive, Full Rogue.
+- **Sinnema Animation Studio écarté** (2 contacts) : le studio est basé à Berlin, hors périmètre Suède.
+
+Domaines sources fragiles (vus seulement dans une base tierce ou un wiki, pas sur le site du studio) : cinematic.se (AroundDeal), oddiko.com (PitchBook), keepsake.games et lionbite.se (Giant Bomb), eatcreatesleep.net (annuaires), studio-konkret.se (LinkedIn donne aussi studio-konkret.com). À tester en premier dans Lemlist.
+
+**Fichiers après mise à jour** (87 lignes, 59 studios dont 2 en réserve) :
+
+| Fichier | Lignes |
+|---|---|
+| import-lemlist-lot10.csv | 5 (adresses publiées : Brikk, Turborilla, Valiant, Filmic, LEE Film) |
+| contacts-serveur-muet.csv | 38 (1ers contacts, adresse devinée) |
+| contacts-sans-email.csv | 15 (1ers contacts sans adresse) |
+| contacts-second-par-studio.csv | 27 (21 devinées, 6 sans email) |
+| reserve.csv | 2 |
+
+Les fichiers sont désormais disjoints : une adresse n'apparaît que dans un seul fichier de sortie. Aucune adresse devinée n'est importable avant que son domaine ait répondu.
