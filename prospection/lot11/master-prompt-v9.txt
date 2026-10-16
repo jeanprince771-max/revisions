@@ -1,0 +1,152 @@
+MASTER PROMPT v9 — Royaume-Uni : studios d'animation, groupes médias, organisateurs d'événements, accélérateurs et incubateurs
+
+Objectif
+Trouver, au Royaume-Uni (Angleterre, Écosse, pays de Galles, Irlande du Nord), des contacts nominatifs avec des adresses vérifiées, dans quatre segments. Ce prompt reprend les règles des v5, v6, v7 et v8.
+
+Volume cible
+Au moins 25 contacts nominatifs par segment, donc au moins 100 au total. Les contacts exploitables au-delà vont dans reserve.csv, pas à la poubelle.
+
+Langue de prospection
+Anglais. La colonne langue vaut toujours "anglais".
+
+Quatre segments, quatre motions, quatre fichiers
+Chaque société appartient à un seul segment. Un fichier par segment, jamais un fichier commun.
+
+Segment A — Studios d'animation (motion WLFG Consulting)
+- Inclus : studios d'animation 2D, 3D, stop-motion, séries, courts et longs métrages ; studios hybrides animation + jeu vidéo ; studios de services (animation, rigging, VFX d'animation) qui développent aussi leur propre IP.
+- Taille : moins de 30 personnes. C'est une condition stricte. Vérifier sur LinkedIn (nombre d'employés), sur le site ou sur Companies House. Si la taille n'est pas trouvée, noter "non trouvée" et marquer la ligne C.
+- Exclure : studios de plus de 30 personnes ; filiales de groupes (Netflix, Disney, Warner, Sony, Tencent, Embracer, Keywords, Hasbro, etc.) ; studios rachetés ces cinq dernières années qui ne décident plus seuls ; écoles ; freelances seuls.
+- Activité prouvée en 2025 ou 2026. Une preuve de plus de deux ans = cas limite, marqué C.
+
+Segment B — Groupes médias (motion WLFG Consulting)
+- Inclus : groupes de production TV et contenus indépendants, groupes d'édition et de presse indépendants, réseaux de podcasts, distributeurs de contenus, groupes de médias numériques.
+- Taille : de 10 à 500 personnes.
+- Exclure : diffuseurs publics et leurs filiales (BBC, BBC Studios, Channel 4, S4C) ; très grands groupes et leurs filiales directes (ITV, ITV Studios, Sky, Banijay UK, Fremantle UK, All3Media, Reach, Bauer, Global, DMG Media, News UK), sauf une filiale qui décide clairement seule ; agences de publicité sans production propre.
+
+Segment C — Organisateurs d'événements (motion WLFG événements 2027)
+- Inclus : festivals d'animation, de film, de jeu vidéo, de BD et de musique ayant un volet professionnel ; salons et marchés professionnels des industries créatives ; conférences et sommets du secteur ; sociétés ou associations qui les organisent.
+- L'événement doit avoir eu une édition en 2025 ou 2026 et en annoncer une pour 2026 ou 2027. Sans édition annoncée, marquer C.
+- Exclure : événements grand public sans volet professionnel ; agences événementielles généralistes sans événement propre ; événements opérés directement par une collectivité, sauf si une structure identifiée les organise.
+
+Segment D — Accélérateurs, incubateurs et programmes scale-up (motion WLFG Blueprint)
+- Inclus : accélérateurs et incubateurs dédiés aux industries créatives, aux médias, à l'animation ou au jeu vidéo ; programmes scale-up pour entreprises créatives ; hubs et clusters créatifs régionaux qui accompagnent des entreprises ; programmes d'entrepreneuriat créatif des universités et écoles.
+- Le programme doit avoir une promotion, une session ou un appel à candidatures en 2025, 2026 ou 2027.
+- Exclure : accélérateurs généralistes sans volet créatif ; fonds d'investissement sans programme d'accompagnement ; programmes fermés ou sans édition récente.
+
+Règle de conformité propre au Royaume-Uni
+Au Royaume-Uni, la prospection B2B par email est permise vers les "corporate subscribers" (sociétés Ltd, PLC, LLP, CIC, associations incorporées), à condition d'identifier l'expéditeur et d'offrir une désinscription. Elle ne l'est pas, sans consentement, vers les entrepreneurs individuels (sole traders) et les partenariats non incorporés. Donc :
+- Vérifier la forme juridique sur Companies House et la noter dans la colonne formeJuridique.
+- Exclure les sole traders et les partenariats non incorporés.
+
+Exclusions communes
+- Toute société déjà présente dans Lemlist ou dans HubSpot, quelle que soit la campagne.
+- Toute société contactée dans les 6 derniers mois.
+- Tout doublon avec les lots déjà livrés (Canada, Pologne, Tchéquie, Slovaquie, Roumanie, Hongrie, Bulgarie, Espagne, Amérique latine, Brésil, Portugal, Angola, Suède, Afrique).
+
+Contacts
+- Nominatif obligatoire : prénom, nom, fonction.
+- Segment A : founder, co-founder, CEO, managing director, studio head, executive producer, head of production, head of business development.
+- Segment B : CEO, managing director, founder, head of international, head of partnerships, head of business development, commercial director.
+- Segment C : festival director, managing director, founder, head of industry programme, head of partnerships, programme director, head of sponsorship.
+- Segment D : programme director, programme manager, head of the accelerator or incubator, founder, head of partnerships, head of enterprise.
+- Pas de contact générique (info@, hello@, contact@, press@) en contact principal. Le générique peut être noté dans une colonne à part.
+- Un seul contact par société dans le fichier d'import. Les autres vont dans contacts-second-par-societe.csv.
+
+Adresses email
+Ordre de priorité :
+A. Adresse publiée par la société, ou par une fiche de festival, de marché, de conférence ou de programme.
+B. Adresse publiée sur un domaine de la société, sans preuve de rattachement à la personne.
+C. Adresse devinée à partir d'un format observé sur le domaine.
+
+RÈGLE BLOQUANTE (héritée de la v5)
+Une adresse devinée (C) n'entre dans le fichier d'import que si son domaine a déjà répondu. Sinon, elle va dans contacts-serveur-muet.csv, sans import.
+
+Vérification
+- Vérifier le MX du domaine avant d'accepter une adresse. Si le DNS ne répond pas, noter "non vérifié (DNS)".
+- Ne jamais inventer un domaine.
+- Une même adresse ne doit apparaître qu'une fois dans l'ensemble des fichiers.
+- Vérifier chaque lien cité (site, source de l'icebreaker, LinkedIn). Un lien qui ne s'ouvre pas ne doit pas être livré.
+
+Où chercher
+Segment A :
+- Annuaire des membres d'Animation UK ; annuaire des membres d'Ukie pour les studios hybrides jeu vidéo.
+- Projets et sociétés soutenus par le BFI, le UK Games Fund, Screen Scotland, Ffilm Cymru Wales et Northern Ireland Screen.
+- Listes d'exposants et de participants : Annecy et MIFA, Cartoon Forum, Cartoon Movie, Manchester Animation Festival, Kids' BAFTA et BAFTA.
+- Companies House pour la taille, la forme juridique et l'actionnariat.
+Segment B :
+- Annuaire des membres de Pact (producteurs indépendants).
+- Listes de participants et d'exposants de MIPCOM, MIPTV, Series Mania, Edinburgh TV Festival et Sheffield DocFest.
+Segment C :
+- Sites officiels des festivals, salons et conférences, pages "team", "about" ou "contact".
+- Agendas des fédérations professionnelles (Animation UK, Ukie, Pact) et des agences régionales de l'écran.
+- Exemples à vérifier avant inclusion (existence, opérateur, prochaine édition) : Manchester Animation Festival, Edinburgh TV Festival, Sheffield DocFest, London Games Festival.
+Segment D :
+- Programmes des agences et réseaux de soutien aux industries créatives au Royaume-Uni et dans les quatre nations.
+- Programmes d'entrepreneuriat créatif des universités et écoles d'art, de cinéma et de jeu vidéo.
+- Clusters créatifs régionaux qui gèrent des incubateurs ou des programmes scale-up.
+
+FACT / SIGNAL / HYPOTHESIS
+- FACT : un fait daté et sourcé (sortie, prix, financement, édition annoncée, nouvelle promotion, partenariat, levée, nomination).
+- SIGNAL : un indice daté et sourcé qui suggère un besoin (ouverture internationale, recrutement d'un head of partnerships, nouveau volet professionnel, nouvel appel à candidatures).
+- HYPOTHESIS : une déduction sans source. Une hypothèse ne sert jamais d'icebreaker.
+
+Score par société (sur 100)
+- ICP : 25
+- Besoin : 20
+- Déclencheur (why now) : 20
+- Valeur commerciale : 15
+- Accès au décideur : 10
+- Valeur stratégique : 10
+Décision : 80 et plus = PRIORITY ; 65 à 79 = COLD_OK ; 50 à 64 = HOLD ; moins de 50 = EXCLUDE.
+Seuls PRIORITY et COLD_OK entrent dans le fichier d'import. HOLD va dans hold.csv. EXCLUDE est noté dans le rapport avec la raison.
+
+Icebreaker (obligatoire)
+- Une phrase en anglais, fondée sur un FACT ou un SIGNAL, avec son URL dans icebreakerSourceUrl. Sans URL, pas d'icebreaker sourcé.
+- Phrases de repli, marquées icebreakerType = phrase de repli :
+  A : "I am reaching out to a handful of independent animation studios in the UK, and {companyName} is one of them."
+  B : "I am reaching out to a handful of independent media groups in the UK, and {companyName} is one of them."
+  C : "I am mapping a small number of creative industry events in the UK to build with in 2027, and {eventName} stood out."
+  D : "I am reaching out to a handful of creative accelerators and incubators in the UK, and {companyName} is one of them."
+
+Format de sortie
+Un fichier CSV par segment :
+- uk-a-studios-animation.csv
+- uk-b-groupes-medias.csv
+- uk-c-evenements.csv
+- uk-d-accelerateurs-incubateurs.csv
+Colonnes :
+email, firstName, lastName, companyName, eventName, jobTitle, linkedinUrl, segment, secteur, typeStudio, icebreaker, icebreakerSourceUrl, icebreakerType, factSignal, score, decision, senderName, pays, nation, ville, langue, priorite, tailleEquipe, formeJuridique, actionnariat, prochaineEdition, statutEmail, verificationMX, note
+- segment : A, B, C ou D
+- secteur : en anglais ("animation studio", "media group", "film festival", "creative accelerator", etc.)
+- typeStudio : animation | hybride animation-jeu | services (segment A seulement)
+- eventName : nom de l'événement (segment C) ; vide sinon
+- senderName : "Garry Yankson"
+- pays : Royaume-Uni ; nation : Angleterre, Écosse, pays de Galles ou Irlande du Nord
+- tailleEquipe : nombre observé, ou "non trouvée"
+- formeJuridique : Ltd, PLC, LLP, CIC, association incorporée, etc.
+- actionnariat : indépendant | détenu par {groupe} | public
+- prochaineEdition : date ou année (segments C et D)
+- statutEmail : publiée | devinée | sans email
+- verificationMX : OK | non vérifié (DNS) | échec
+
+Fichiers supplémentaires
+- contacts-serveur-muet.csv, contacts-sans-email.csv, contacts-second-par-societe.csv, hold.csv, reserve.csv
+- rapport.md
+
+Ce qu'il faut éviter
+- Aucune variable Lemlist vide : firstName, companyName, icebreaker et senderName remplis pour chaque ligne, et eventName pour chaque ligne du segment C. Une ligne avec une variable vide n'est pas livrée.
+- Nom de société propre : un seul nom, sans virgule, sans espace parasite, tel qu'il doit apparaître dans un objet de mail.
+- Pas de valeur en français dans une colonne qui sert de variable dans un texte anglais.
+- Pas de "Re:" en fausse réponse, pas de "Hey".
+- Pas de studio de 30 personnes ou plus dans le segment A.
+
+Rapport final (rapport.md, en français, pour Garry)
+- Nombre de contacts par segment et par décision (PRIORITY, COLD_OK, HOLD, EXCLUDE), et si l'objectif de 25 par segment est atteint.
+- Segment A : répartition animation / hybride / services, et studios écartés pour taille ou actionnariat.
+- Répartition des adresses : publiées, devinées, sans email.
+- Sociétés écartées et pourquoi (taille, forme juridique, actionnariat, déjà contactée, doublon).
+- Cas limites et domaines non vérifiés.
+- Ce qui reste à vérifier dans Lemlist avant import.
+- Checkpoint : Campaign, Status, Target, Added, Remaining, Excluded, HOLD, Credits used (0), Sequence, Launch (non), Next action.
+
+Ne rien importer ni lancer dans Lemlist. Le lot est livré pour validation par Garry.

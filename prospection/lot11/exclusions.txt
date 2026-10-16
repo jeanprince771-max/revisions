@@ -1,0 +1,19 @@
+# Lot 11 Royaume-Uni : sociétés à exclure
+# 1) Déjà présentes dans Lemlist (campagnes festivals / événements créatifs, vu le 16/10/2026) :
+Liverpool Sound City (soundcity.uk.com)
+Develop:Brighton (Tandem Events, tandemevents.co.uk)
+Pocket Gamer Connects London (Steel Media, steelmedianetwork.com)
+SXSW London (sxswlondon.com)
+London Design Festival / Global Design Forum / London Design Biennale (londondesignbiennale.com)
+ILMC (ilmc.com)
+The Great Escape (greatescapevic.com)
+Music Ally / Music Ally Connect (musically.com)
+LIA - London International Awards
+World Architecture Festival (worldarchitecturefestival.com)
+1-54 Contemporary African Art Fair
+IBC (ibc.org)
+Integrated Systems Europe
+# La liste complète Lemlist + HubSpot est revérifiée à la consolidation : ne t'en soucie pas au-delà de cette liste.
+# 2) Groupes exclus (et filiales directes) :
+BBC, BBC Studios, Channel 4, S4C, ITV, ITV Studios, Sky, Banijay UK, Fremantle UK, All3Media, Reach, Bauer, Global, DMG Media, News UK
+Netflix, Disney, Warner Bros. Discovery, Sony, Tencent, Embracer, Keywords Studios, Hasbro (ex. eOne), Mattel, Paramount, Comcast/NBCU, Lionsgate, WildBrain (Canada)
