@@ -1,0 +1,91 @@
+agent,companyName,eventName,companyDomain,emails
+a1,Lupus Films,,lupusfilms.com,camilla@lupusfilms.com
+a1,Beakus,,beakus.com,steve@beakus.com
+a1,Moth,,moth.studio,daniel@moth.studio
+a1,Illuminated Films,,illuminatedfilms.com,iain.harvey@illuminatedfilms.com
+a1,Hoho Entertainment,,,
+a2,A Productions,,aproductions.co.uk,katherine.mcqueen@aproductions.co.uk
+a2,Second Home Studios,,,
+a2,Fettle Animation,,,
+a2,Flipbook Studio,,flipbookstudio.co.uk,andrew.lord@flipbookstudio.co.uk
+a2,One6th,,,
+a2,Bumpybox,,,
+a2,Bomper Studio,,,
+a2,Flickerpix,,,
+a2,ALT Animation,,,
+a2,Dog Ears,,,
+a2,Cahoots Studios,,,
+a2,Pokedstudio,,,
+a2,Sixteen South,,sixteensouth.tv,colin.williams@sixteensouth.tv
+a2,Red Star 3D,,,
+b1,Argonon,,argonon.com,james.burstall@argonon.com
+b1,Zinc Media,,zincmedia.com,mark.browning@zincmedia.com
+b1,Hat Trick,,hattrick.co.uk,jimmy.mulville@hattrick.co.uk
+b1,Woodcut Media,,woodcutmedia.com,kate.beal@woodcutmedia.com
+b1,TVF International,,tvfinternational.com,poppy.mcalister@tvfinternational.com
+b1,Two Rivers Media,,tworiversmedia.co.uk,alan.clements@tworiversmedia.co.uk
+b1,Blink Films,,blinkfilmsuk.com,dan.chambers@blinkfilmsuk.com
+b1,Raise the Roof Productions,,,
+b1,Five Mile Films,,fivemilefilms.co.uk,nick.mirsky@fivemilefilms.co.uk
+b1,Wonderhood Studios,,,
+b1,Hungry Bear Media,,,
+b1,Waddell Media,,waddellmedia.com,jannine.waddell@waddellmedia.com
+b1,Avalon,,,
+b2,Goalhanger,,goalhanger.com,tony.pastor@goalhanger.com
+b2,Audioboom,,audioboom.com,stuart.last@audioboom.com
+b2,Kelsey Media,,kelsey.co.uk,s.kendall@kelsey.co.uk
+b2,Jungle Creations,,junglecreations.com,mallory.simmonds@junglecreations.com
+b2,CAKE,,cakeentertainment.com,ed.galton@cakeentertainment.com
+b2,Dazed Media,,dazedmedia.com,jefferson.hack@dazedmedia.com
+b2,Persephonica,,,
+b2,Novel,,novel.audio,craig.strachan@novel.audio
+b2,Tortoise Media,,tortoisemedia.com,richard.furness@tortoisemedia.com
+b2,Monocle,,monocle.com,tyler.brule@monocle.com
+b2,The Spectator,,,
+b2,Crowd Network,,crowdnetwork.co.uk,mike.carr@crowdnetwork.co.uk
+c1,Manchester Animation Festival,Manchester Animation Festival,manchesteranimationfestival.co.uk,steve@manchesteranimationfestival.co.uk
+c1,Encounters Festivals,Encounters Film Festival,encounters.film,dave@encounters.film
+c1,Cardiff Animation Festival,Cardiff Animation Festival,cardiffanimation.com,lauren@cardiffanimation.com
+c1,International Documentary Festival Sheffield,Sheffield DocFest,sheffdocfest.com,mimi.poskitt@sheffdocfest.com
+c1,London Short Film Festival,London Short Film Festival,shortfilms.org.uk,philip@shortfilms.org.uk
+c1,Aesthetica,Aesthetica Short Film Festival,aestheticamagazine.com,cherie@aestheticamagazine.com
+c1,Film London,London Games Festival,filmlondon.org.uk,michael.french@filmlondon.org.uk michael.french@filmlondon.org.uk
+c1,Edinburgh International Film Festival,Edinburgh International Film Festival,,
+c1,Belfast Film Festival,Belfast Film Festival,belfastfilmfestival.org,michele@belfastfilmfestival.org
+c1,Nerve Centre,Foyle Film Festival,nervecentre.org,eavan.king@nervecentre.org
+c1,Glasgow Film,Glasgow Film Festival,glasgowfilm.org,seonaid.daly@glasgowfilm.org
+c1,Iris Prize,Iris Prize Festival,irisprize.org,berwyn@irisprize.org
+c1,Scottish Games Network,Scottish Games Week,scottishgames.net,brian@scottishgames.net
+c2,Edinburgh TV Festival,Edinburgh TV Festival,thetvfestival.com,campbell.glennie@thetvfestival.com
+c2,Thought Bubble,Thought Bubble Festival,thoughtbubblefestival.com,nabil@thoughtbubblefestival.com
+c2,Lakes International Comic Art Festival,Lakes International Comic Art Festival,comicartfestival.com,julie@comicartfestival.com
+c2,Wide Days,Wide Days,widedays.com,olaf@widedays.com
+c2,FOCUS Wales,FOCUS Wales,focuswales.com,neal@focuswales.com
+c2,Children's Media Conference,Children's Media Conference,,
+c2,Music Venue Trust,Venues Day,musicvenuetrust.com,mark.davyd@musicvenuetrust.com
+c2,Brighton Music Conference,Brighton Music Conference,brightonmusicconference.co.uk,billy@brightonmusicconference.co.uk
+c2,AIM,AIM Connected,,
+c2,C21Media,Content London,c21media.net,djenkinson@c21media.net
+c2,Celtic Media Festival,Celtic Media Festival,celticmediafestival.co.uk,catriona@celticmediafestival.co.uk
+c2,Creative Cities Convention,Creative Cities Convention,,
+d1,Creative UK,,wearecreative.uk,h.edwards@wearecreative.uk
+d1,Indielab,,weareindielab.co.uk,victoria@weareindielab.co.uk
+d1,Digital Catapult,,digicatapult.org.uk,jessica.rushworth@digicatapult.org.uk
+d1,Ukie,,,
+d1,Growth Company,,,
+d1,BPI,,bpi.co.uk,leon.neville@bpi.co.uk
+d2,Royal Holloway,,rhul.ac.uk,sarah.ellis@rhul.ac.uk
+d2,Cardiff University,,cardiff.ac.uk,PepperS@cardiff.ac.uk
+d2,UK Games Fund,,ukgamesfund.com,paul@ukgamesfund.com
+d2,Screen Scotland,,screen.scot,louise.acheson@screen.scot
+d2,Tramshed Tech,,tramshedtech.co.uk,sophie.webber@tramshedtech.co.uk
+d2,Creative Edinburgh,,creative-edinburgh.com,ola@creative-edinburgh.com
+d2,Watershed,,watershed.co.uk,martin.o@watershed.co.uk
+d2,University of the Arts London,,arts.ac.uk,luminita.molico@arts.ac.uk
+d2,Falmouth University,,falmouth.ac.uk,colin.mitchell@falmouth.ac.uk
+d2,Scottish Game Developers Association,,,
+d2,Teesside University,,tees.ac.uk,s.dougan@tees.ac.uk
+d2,Ravensbourne University London,,ravensbourne.ac.uk,jessica.lewis@ravensbourne.ac.uk
+d2,Curated Place,,curatedplace.com,andy@curatedplace.com
+d2,University of York,,,
+d2,Culture & Business Scotland,,,
