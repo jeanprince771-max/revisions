@@ -244,3 +244,45 @@ Garry a fait vérifier 8 adresses dans Lemlist : **7 livrables, 1 risquée** (ca
 - **Little Moon Animation** (vanessa.robinson@, HOLD) n'a pas été testé non plus.
 
 **Statut :** 1 PRIORITY, 4 COLD_OK, 7 HOLD.
+
+## Mise à jour : seconde passe (jeu vidéo, production jeunesse, VFX)
+
+À la demande de Garry, deux agents ont cherché d'autres leads aux paliers 3, 4 et 5 dans tout le pays (environ 105 recherches). **6 sociétés de plus, toutes en HOLD.** Aucune n'entre dans l'import.
+
+| Société | Palier | Lieu | Contact | Score | Déclencheur | Adresse |
+|---|---|---|---|---|---|---|
+| Psychic Software | 3 | Galway | Sam Redfern | 63 | FACT fort 2026-10 : annonce de *The Lich Wars* | sam@psychicsoftware.com (devinée) |
+| Reliable Plumbing Services | 3 | Kells, Meath | Matt Murtagh | 61 | FACT fort 2026-09 : *Fallosophy* sur Steam, auto-édité | sans email |
+| Rat and Monkey | 3 | Galway | Lara Clifford | 51 | FACT moyen 2026-07 : Kickstarter de *Bibdu* | sans email |
+| Tailored Films | 4 | Dublin | Ruth Treacy | 60 | FACT moyen 2026-05 : *Hokum* sorti aux États-Unis par Neon | ruth@tailoredfilms.ie (devinée) |
+| Dyehouse Films | 4 | Dublin | Bonnie Dempsey | 56 | FACT fort 2026-07 : *The Unreal*, saison 3 au slate RTÉ KIDS | sans email |
+| Desmond Bros Media | 4 | Cork | Cian Desmond | 53 | FACT moyen 2026-06 : prix Torc pour *Mamó agus Mise* (à reconfirmer ; sinon EXCLUDE) | cian@desmondbros.ie (devinée) |
+
+**Pourquoi HOLD :**
+- **Micro-équipes :** studios de jeu de 1 à 4 personnes, sociétés de production sous 10 salariés.
+- **Pas d'adresse sans site :** 3 sociétés n'ont aucun domaine trouvé.
+- **Paliers moins bien notés :** les paliers 3 et 4 ne valent que 8 points sur 20 en ICP.
+
+**Écartés de cette passe (19) :**
+- Romero Games : 42 salariés.
+- Gambrinous : édité par Blumhouse Games.
+- HopSkip Studios : Irlande du Nord.
+- Monster Entertainment : distributeur.
+- Brick Films : EXCLUDE, score 38.
+- Les autres : numéro CRO non trouvé, pas d'activité datée de moins de 12 mois, ou hors périmètre.
+
+Le détail est dans `ecartes-consolides.csv`, qui compte maintenant 61 sociétés.
+
+**Vérification Lemlist et HubSpot :** aucune des 6 sociétés n'y figure. Desmond Creative Studios, dans Lemlist, est un homonyme sans rapport.
+
+**Conclusion : le gisement irlandais est épuisé sur les cinq paliers.**
+
+| Total du lot | Sociétés |
+|---|---|
+| Retenues | 18 (1 PRIORITY, 4 COLD_OK, 13 HOLD) |
+| Fichier d'import | 4 |
+| Serveur muet | 1 (Treehouse Republic, à tester dans Lemlist) |
+
+Les études de marché et annuaires irlandais ne contiennent plus de studio indépendant qualifié non traité. Pour aller plus loin, il faudrait assouplir un critère du brief, par exemple accepter les 1 à 4 personnes avec IP propre en COLD_OK, ou accepter les studios sans numéro CRO trouvé en ligne après une vérification manuelle sur core.cro.ie. C'est une décision pour Garry.
+
+**Pistes non vérifiées, faute de budget :** Sharp Glass Games, Silly Goose Games, Round Robin Interactive, Void Interactive. Ce sont des équipes IndieDev 2025, probablement des micro-équipes.
