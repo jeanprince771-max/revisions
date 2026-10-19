@@ -190,3 +190,16 @@ Cartoon Saloon (taille) est rangé en hors périmètre, Black Shamrock (taille) 
 | Sequence | à définir (motion WLFG Consulting, angle « vendre son IP hors d'Irlande ») |
 | Launch | non |
 | Next action | Garry confirme le cadre de conformité irlandais. Recontrôler l'effectif de Treehouse Republic. Tester dans Lemlist les domaines des 3 adresses devinées PRIORITY / COLD_OK. Importer Fíbín Media après validation. |
+
+## Mise à jour du 19/10/2026 : profils LinkedIn
+
+- **15 profils sur 19 personnes**, tous au niveau « nom + structure » (l'extrait de recherche montre la personne et son studio). 10 URL déjà présentes ont été confirmées, 5 nouvelles ajoutées : Dale Robinson, Kevin McBride, Darach Ó Tuairisg, Aria Ungerer, Aidan O'Donovan.
+- **Premiers contacts : 10 sur 12 ont leur LinkedIn.** Introuvables : Brian Willis (Dream Logic Studios) et Llaura McGee (Dreamfeel).
+- **Seconds contacts introuvables :** Leevi Lemmetty (Ink and Light), Paul Dowling (Igloo).
+- **Pages société** trouvées pour 8 studios (détail dans la colonne note) : Treehouse Republic, Ink and Light, Turnip and Duck, Igloo, Little Moon, Distillery Films, Studio Meala, Outlier Games.
+- **Signaux à vérifier :**
+  - Paul Froggatt (Outlier Games) affiche « Technical Director ». Le poste de la fiche est corrigé en « Co-Founder and Technical Director ».
+  - Darach Ó Tuairisg affiche « Fibin Films », une société qu'il a cofondée en 2024. D'autres sources le donnent toujours CEO de Fíbín Media.
+  - Paul Dowling (Igloo) apparaît comme « Co Director at Orchard Recording ». Il a peut-être quitté le studio.
+  - Brian Willis (Dream Logic) : aucune trace de lui chez Dream Logic. Le contact est peut-être périmé.
+- Fichier brut : `linkedin-sortie.csv`.
