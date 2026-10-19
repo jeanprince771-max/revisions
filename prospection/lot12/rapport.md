@@ -203,3 +203,44 @@ Cartoon Saloon (taille) est rangé en hors périmètre, Black Shamrock (taille) 
   - Paul Dowling (Igloo) apparaît comme « Co Director at Orchard Recording ». Il a peut-être quitté le studio.
   - Brian Willis (Dream Logic) : aucune trace de lui chez Dream Logic. Le contact est peut-être périmé.
 - Fichier brut : `linkedin-sortie.csv`.
+
+## Mise à jour : vérification Lemlist (export Garrys_campaign_22_3)
+
+Garry a fait vérifier 8 adresses dans Lemlist : **7 livrables, 1 risquée** (catch-all).
+
+| Adresse | Statut avant | Verdict Lemlist |
+|---|---|---|
+| aria@pictor.ie | publiée | livrable |
+| darach@fibinmedia.ie | publiée | livrable |
+| stephen@studiomeala.com | publiée | livrable |
+| llaura@dreamfeel.ie | devinée (prenom@) | livrable |
+| trevor@iglooanimations.com | devinée (prenom@, format observé) | livrable |
+| jonathan@distilleryfilms.ie | devinée (prenom@) | livrable |
+| colm@turnipandduck.com | devinée (prenom@) | livrable |
+| tamsin.lyons@ink-and-light.com | devinée (prenom.nom@) | risqué (catch-all) |
+
+**Enseignement :** sur les petits studios irlandais, le format prenom@ passe 4 fois sur 4. Les verdicts sont ajoutés à `lot5/historique-verdicts-domaines.csv`.
+
+**Effet sur le lot.** Les domaines ont répondu, donc la règle bloquante est levée pour ces adresses. Le critère Accès passe de 5 à 10 pour les dirigeants à adresse devinée et vérifiée :
+
+| Société | Score avant | Score après | Décision |
+|---|---|---|---|
+| Distillery Films | 67 | 72 | COLD_OK |
+| Dreamfeel | 61 | 66 | passe de HOLD à COLD_OK |
+| Turnip and Duck | 63 | 68 | reste HOLD |
+| Igloo Animations | 50 | 55 | HOLD |
+
+- **Dreamfeel :** effectif non trouvé, probablement 1 à 4 personnes (hypothèse). À confirmer par Garry.
+- **Turnip and Duck :** reste HOLD malgré le score, parce que son effectif de 4 tombe dans la tranche 1-4 du brief.
+
+**Nouveau fichier d'import : 4 lignes**
+- Fíbín Media (adresse publiée, livrable)
+- Distillery Films (livrable)
+- Dreamfeel (livrable)
+- Ink and Light (risquée, catch-all) : le domaine accepte toutes les adresses, donc le prénom.nom de Tamsin Lyons n'est pas confirmé. À envoyer en connaissance de cause.
+
+**Encore à tester :**
+- **Treehouse Republic**, seul PRIORITY du lot : dale.robinson@treehouserepublic.com n'était pas dans l'export. Il est toujours dans `contacts-serveur-muet.csv`.
+- **Little Moon Animation** (vanessa.robinson@, HOLD) n'a pas été testé non plus.
+
+**Statut :** 1 PRIORITY, 4 COLD_OK, 7 HOLD.
