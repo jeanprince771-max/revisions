@@ -1,0 +1,381 @@
+MASTER PROMPT v11 (Claude Code) — Irlande : studios d'animation, 20 contacts nominatifs
+
+CONTEXTE
+WLFG aide les entreprises des industries créatives à ouvrir des portes hors de leur marché
+domestique : clients internationaux, partenaires de coproduction, distribution, structuration
+commerciale. Garry Yankson est l'expéditeur. Prospection en anglais, par mail, depuis Lemlist.
+
+Pourquoi l'Irlande, et pourquoi maintenant. Le secteur irlandais de l'écran a connu une année
+record en 2025, avec 544 millions d'euros de dépenses de production, en hausse de 26 pour cent
+sur 2024. Mais la directrice de Screen Ireland, Désirée Finnegan, parle d'une contraction
+significative depuis le retrait des plateformes, et le patron d'Animation Ireland, Ronan
+McCabe, a déclaré le 14 octobre 2026 dans l'Irish Times que le secteur dépend trop de la
+commande publique pour le jeunesse et que, je cite, la seule façon de construire des
+entreprises qui valent quelque chose est de garder l'IP.
+
+C'est précisément ce que WLFG vend : aider un studio qui garde son IP à la vendre ailleurs.
+Un secteur dont la fédération dit publiquement qu'il doit retenir son IP, dans un marché
+domestique qui se contracte, est un secteur qui a besoin de débouchés étrangers.
+
+Ce contexte sectoriel est un cadre, pas un déclencheur. Il ne remplace jamais un fait daté
+propre à la société. Il sert à comprendre pourquoi le message a des chances d'être lu.
+
+Tu ne lances rien et tu n'importes rien dans Lemlist. Tu livres des fichiers pour validation
+par Garry.
+
+VOLUME CIBLE
+20 contacts nominatifs, soit 20 sociétés, une seule personne par société.
+Le marché irlandais est petit. 20 sociétés qualifiées est un objectif réaliste mais tendu.
+Mieux vaut livrer 14 sociétés avec un vrai déclencheur daté que 20 dont six reposent sur une
+hypothèse. Si tu n'atteins pas 20, livre moins et explique pourquoi dans le rapport.
+
+PÉRIMÈTRE GÉOGRAPHIQUE
+République d'Irlande uniquement.
+L'Irlande du Nord est EXCLUE de ce lot : elle appartient au Royaume-Uni et relève des master
+prompts v9 et v10. Un studio de Belfast, de Derry ou d'ailleurs en Irlande du Nord ne doit pas
+apparaître ici. Vérifie l'adresse du siège avant de retenir une société.
+
+================================================================================
+PARTIE 1 — QUALIFICATION
+================================================================================
+
+SEGMENT PRINCIPAL — Studios d'animation
+Motion : WLFG Consulting, accès clients et partenaires hors Irlande.
+
+Effectif cible : 5 à 29 salariés. Strictement moins de 30.
+  1 à 4      : HOLD. Souvent un freelance ou un collectif. À ne retenir que si le studio a une
+               IP propre et une production prouvée.
+  5 à 9      : recevable.
+  10 à 29    : cœur de cible. Assez de production pour avoir quelque chose à vendre, pas assez
+               de structure pour avoir un responsable international.
+  30 et plus : EXCLURE, sans exception.
+
+Où lire l'effectif, dans cet ordre : LinkedIn de la société, Companies Registration Office
+(CRO, comptes annuels déposés), page équipe du site en comptant les personnes nommées.
+Si les sources divergent, retiens la plus récente et note les autres dans la colonne note.
+Si tu ne trouves pas, écris "non trouvée". N'invente jamais un chiffre.
+
+Inclus : studios d'animation 2D, 3D, stop-motion, séries, courts et longs métrages ; studios
+hybrides animation et jeu vidéo ; studios de services qui développent aussi leur propre IP.
+
+Exclus :
+  Studios de 30 personnes et plus.
+  Filiales de groupes étrangers ou irlandais, et studios rachetés ces cinq dernières années
+    qui ne décident plus seuls. Plusieurs des studios irlandais les plus connus sont détenus
+    par des groupes internationaux : vérifie systématiquement l'actionnariat sur le CRO avant
+    de retenir une société, ne te fie pas au site.
+  Coentreprises créées avec un partenaire étranger pour servir ce partenaire.
+  Écoles, départements universitaires, associations.
+  Freelances sans société enregistrée.
+  Tout studio situé en Irlande du Nord.
+
+Contre-signal à repérer : si le studio affiche un head of sales, un head of international, un
+head of distribution ou un distributeur attitré, le besoin est déjà couvert. Note-le et baisse
+le score sur le critère Besoin.
+
+Fonctions visées : founder, co-founder, CEO, managing director, studio head, creative director
+quand il est aussi dirigeant, executive producer, head of production, head of development,
+head of business development.
+
+ÉCHELLE DE REPLI, si tu n'atteins pas 20 sociétés
+Applique les paliers dans cet ordre, et note dans le rapport combien de sociétés viennent de
+chaque palier.
+  Palier 1  Studios d'animation, 5 à 29 salariés. C'est le cœur.
+  Palier 2  Studios hybrides animation et jeu vidéo, même fourchette d'effectif.
+  Palier 3  Studios de jeu vidéo indépendants avec IP propre et sans éditeur attitré. Le
+            besoin est le même : trouver un partenaire international pour porter le produit.
+  Palier 4  Petites sociétés de production indépendantes qui produisent du contenu jeunesse ou
+            de l'animation, 10 à 50 salariés.
+  Palier 5  Studios de VFX et de post-production indépendants qui développent aussi leur
+            propre contenu.
+Ne descends pas au palier suivant tant que tu n'as pas épuisé le précédent.
+Ne complète jamais avec un second contact dans une société déjà retenue. Ces contacts vont
+dans contacts-second-par-societe.csv et ne comptent pas dans les 20.
+
+================================================================================
+PARTIE 2 — LES DÉCLENCHEURS
+================================================================================
+
+Un déclencheur est un fait daté et sourcé qui rend le message pertinent maintenant.
+
+Règle de fraîcheur
+  moins de 6 mois  : déclencheur plein, points complets.
+  6 à 12 mois      : déclencheur affaibli, la moitié des points.
+  plus de 12 mois  : ce n'est plus un déclencheur. Zéro point, et la société plafonne à
+                     COLD_OK.
+Date de référence : le jour de ta recherche. Note la date du fait en AAAA-MM dans
+declencheurDate. Chaque déclencheur doit avoir une URL qui s'ouvre. Pas d'URL, pas de
+déclencheur.
+
+DÉCLENCHEURS FORTS
+  Première IP propre annoncée, ou passage du travail de service à la création. C'est le
+    déclencheur le plus fort du lot, parce qu'il correspond mot pour mot au diagnostic public
+    d'Animation Ireland. Un studio qui annonce sa première série originale a soudain quelque
+    chose à vendre hors d'Irlande et personne pour le vendre. Cherche activement ce motif dans
+    les actualités d'Animation Ireland.
+  Financement Screen Ireland obtenu : développement, production, ou aide à l'animation.
+  Projet agréé Section 481, ou société qui apparaît dans les annonces liées à ce dispositif.
+  Soutien Creative Europe MEDIA obtenu.
+  Série ou long métrage commandé ou mis en production, annoncé en 2025 ou 2026, qu'il s'agisse
+    d'une commande de RTÉ, de TG4 ou d'un diffuseur étranger.
+  Coproduction annoncée avec un studio étranger.
+  Pitch ou sélection à Cartoon Forum, Cartoon Movie, au MIFA d'Annecy ou au Kidscreen Summit,
+    en particulier une première participation.
+
+DÉCLENCHEURS MOYENS
+  Recrutement d'un head of development, d'un producteur senior ou d'un head of production.
+  Prix ou nomination : IFTA, Annecy, BAFTA, Emmy Kids, Irish Animation Awards.
+  Participation à une délégation Animation Ireland sur un marché international.
+  Nouveaux locaux, déménagement, ouverture d'un second site.
+  Levée de fonds ou entrée d'un investisseur minoritaire.
+  Anniversaire du studio, dixième ou vingtième année.
+
+CONTRE-SIGNAUX, qui font baisser le score
+  Recrutement récent d'un head of sales, head of international ou head of distribution.
+  Distributeur ou agent de vente attitré affiché sur le site.
+  Aucune actualité depuis plus de deux ans.
+  Comptes déposés au CRO montrant une activité en forte baisse, ou mention de going concern.
+  Rachat récent par un groupe.
+
+================================================================================
+PARTIE 3 — CLASSEMENT DE L'INFORMATION
+================================================================================
+
+FACT        Fait daté et sourcé, vu sur une page que tu as ouverte.
+SIGNAL      Indice daté et sourcé qui suggère un besoin sans le prouver, par exemple une offre
+            d'emploi ou une participation à un marché.
+HYPOTHESIS  Déduction sans source. Autorisée dans la colonne note, nulle part ailleurs. Jamais
+            d'icebreaker, jamais de points.
+
+Une société dont tu n'as qu'une HYPOTHESIS ne dépasse pas HOLD.
+
+================================================================================
+PARTIE 4 — SCORE
+================================================================================
+
+  Déclencheur (why now)      30
+  ICP, correspondance cible  20
+  Besoin identifié           20
+  Accès au décideur          15
+  Valeur commerciale         15
+                            ---
+                            100
+
+Déclencheur, 30 points
+  30  FACT fort de moins de 6 mois, avec URL.
+  20  FACT moyen de moins de 6 mois, ou FACT fort de 6 à 12 mois.
+  10  SIGNAL daté de moins de 12 mois.
+   0  Rien de daté, ou fait de plus de 12 mois.
+
+ICP, 20 points
+  20  Studio d'animation, palier 1, effectif 10 à 29.
+  12  Palier 1 avec effectif 5 à 9, ou palier 2.
+   8  Palier 3 ou 4.
+   5  Palier 5, ou cas limite assumé et expliqué dans la note.
+   0  Hors périmètre, la société sort.
+
+Besoin, 20 points
+  20  Aucune structure commerciale ou internationale visible, et le déclencheur crée le besoin.
+  12  Structure partielle.
+   5  Structure existante mais le déclencheur ouvre un angle complémentaire.
+   0  Besoin couvert, contre-signal présent.
+
+Accès au décideur, 15 points
+  15  Fondateur ou dirigeant, adresse publiée.
+  10  Dirigeant, adresse à format vérifié sur un domaine qui répond.
+   5  Niveau intermédiaire avec pouvoir de recommandation.
+   0  Pas de contact nominatif. La ligne ne part pas.
+
+Valeur commerciale, 15 points
+  15  Taille et activité qui justifient un accompagnement payant.
+   8  Valeur moyenne.
+   3  Faible, intérêt surtout stratégique.
+
+Décision
+  80 et plus   PRIORITY
+  65 à 79      COLD_OK
+  50 à 64      HOLD, va dans hold.csv
+  moins de 50  EXCLUDE, noté dans le rapport avec la raison
+Seuls PRIORITY et COLD_OK entrent dans le fichier d'import.
+
+================================================================================
+PARTIE 5 — CONTACTS ET ADRESSES
+================================================================================
+
+Nominatif obligatoire : prénom, nom, fonction. Pas de générique (info@, hello@, contact@,
+press@) en contact principal. Le générique peut aller dans une colonne à part.
+Un seul contact par société dans le fichier d'import.
+
+Qualité de l'adresse
+  A  Adresse publiée par la société, ou par une fiche de festival, de marché ou d'annuaire
+     professionnel.
+  B  Adresse publiée sur un domaine de la société, sans preuve de rattachement à la personne.
+  C  Adresse devinée à partir d'un format observé sur le domaine.
+
+RÈGLE BLOQUANTE, héritée de la v5
+Une adresse devinée (C) n'entre dans le fichier d'import que si son domaine a déjà répondu.
+Sinon elle va dans contacts-serveur-muet.csv, sans import.
+
+Vérification
+  Vérifie le MX du domaine avant d'accepter une adresse. Si le DNS ne répond pas, note
+    "non vérifié (DNS)".
+  Attention aux domaines en .ie, dont l'enregistrement est contrôlé : ne déduis jamais un
+    domaine, lis-le sur le site ou sur l'annuaire.
+  N'invente jamais un domaine. Une même adresse n'apparaît qu'une fois dans l'ensemble des
+    fichiers.
+  Ouvre chaque lien que tu livres. Un lien qui ne s'ouvre pas ne part pas.
+
+================================================================================
+PARTIE 6 — CONFORMITÉ IRLANDE
+================================================================================
+
+Point de vigilance, à faire valider par Garry avant tout envoi.
+
+L'Irlande est dans l'Union européenne. Le régime applicable à la prospection B2B par mail y
+découle de la directive ePrivacy telle que transposée en droit irlandais, et non de la règle
+britannique du corporate subscriber que nous appliquons dans les lots v9 et v10. Les matrices
+de conformité consultées classent l'Irlande en régime strict, avec une base d'intérêt légitime
+dont la portée varie selon la transposition nationale. Autrement dit, c'est praticable mais
+moins confortable que le Royaume-Uni, et je ne peux pas te garantir le détail de la règle.
+
+En conséquence, applique une discipline au moins égale à celle du Royaume-Uni :
+  Ne retiens que des personnes morales enregistrées au CRO. Note le numéro CRO dans la colonne
+    numeroCRO. Une société sans numéro CRO ne part pas.
+  Exclus les sole traders et les partenariats non incorporés.
+  N'utilise que des adresses professionnelles liées au domaine de la société. Pas de gmail, pas
+    d'adresse personnelle.
+  L'expéditeur doit être identifiable et le mail doit offrir une désinscription claire.
+  Le message doit être lié à la fonction professionnelle de la personne.
+  Toute demande de retrait est traitée immédiatement et définitivement.
+Fais confirmer ce cadre par Garry avant le lancement, pas après.
+
+EXCLUSIONS COMMUNES
+  Toute société déjà présente dans Lemlist ou dans HubSpot, quelle que soit la campagne.
+  Toute société contactée dans les 6 derniers mois.
+  Tout doublon avec les lots déjà livrés : Royaume-Uni, Canada, Pologne, Tchéquie, Slovaquie,
+  Roumanie, Hongrie, Bulgarie, Espagne, Amérique latine, Brésil, Portugal, Angola, Suède,
+  Afrique.
+  Toute société d'Irlande du Nord, qui relève du lot britannique.
+
+================================================================================
+PARTIE 7 — OÙ CHERCHER
+================================================================================
+
+Sources principales
+  Annuaire des membres d'Animation Ireland, et sa rubrique actualités, qui est la meilleure
+    source de déclencheurs datés pour ce lot.
+  Screen Ireland : listes de projets financés, annonces de financement, programmes animation.
+  Companies Registration Office (CRO) pour la forme juridique, l'effectif, l'actionnariat et
+    les dirigeants.
+  Imirt, l'association irlandaise des développeurs de jeu vidéo, pour les paliers 2 et 3.
+  Screen Producers Ireland pour le palier 4.
+
+Sources de déclencheurs
+  Listes de participants, d'exposants et de pitchs : Cartoon Forum, Cartoon Movie, MIFA
+    Annecy, Kidscreen Summit, Dublin Animation Film Festival.
+  Annonces de commandes de RTÉ et de TG4.
+  Creative Europe MEDIA, bénéficiaires irlandais.
+  Presse sectorielle : Irish Times section écran, Screen Daily, Irish Examiner, Broadcast.
+  IFTA et Irish Animation Awards pour les prix et nominations.
+
+Studios à vérifier avant inclusion, sans présumer du résultat
+Vérifie pour chacun l'effectif, l'actionnariat et la localisation, et écarte sans hésiter ceux
+qui dépassent 30 personnes ou qui appartiennent à un groupe. Plusieurs des noms les plus connus
+du secteur irlandais sortiront du périmètre pour ces deux raisons, c'est normal et attendu.
+Exemple de motif à chercher : un studio qui annonce sa première série originale, comme Pink
+Kong Studios l'a fait récemment, coche exactement le déclencheur fort de ce lot.
+
+================================================================================
+PARTIE 8 — ICEBREAKER
+================================================================================
+
+Une phrase en anglais, fondée sur le déclencheur propre à la société, avec son URL dans
+icebreakerSourceUrl. Elle nomme le fait, elle ne le commente pas. Pas de compliment générique.
+
+Bon : "I saw [Studio] announced its first original series, [title], in [month]."
+Bon : "I saw [Studio] received Screen Ireland development funding for [title] in [month]."
+Mauvais : "I was impressed by your beautiful work."
+
+N'utilise pas le contexte sectoriel comme icebreaker. Écrire à un dirigeant irlandais que son
+secteur se contracte n'est ni une nouvelle ni une amorce agréable.
+
+Phrase de repli, à marquer icebreakerType = phrase de repli :
+  "I am reaching out to a handful of independent animation studios in Ireland, and
+   {companyName} is one of them."
+Une ligne avec phrase de repli ne peut pas être PRIORITY.
+
+================================================================================
+PARTIE 9 — SORTIE
+================================================================================
+
+Fichier principal : irlande-studios-animation.csv, 20 lignes maximum.
+
+Colonnes
+email, firstName, lastName, companyName, jobTitle, linkedinUrl, palier, secteur, typeStudio,
+tailleEquipe, sourceTailleEquipe, formeJuridique, numeroCRO, actionnariat, ville, comte,
+declencheur, declencheurType, declencheurDate, declencheurSourceUrl, contreSignal, icebreaker,
+icebreakerSourceUrl, icebreakerType, scoreDeclencheur, scoreICP, scoreBesoin, scoreAcces,
+scoreValeur, score, decision, senderName, pays, langue, priorite, statutEmail, verificationMX,
+note
+
+Précisions
+  palier             1 à 5, selon l'échelle de repli
+  typeStudio         animation | hybride animation-jeu | jeu | production | vfx-post
+  tailleEquipe       nombre observé, ou "non trouvée"
+  sourceTailleEquipe linkedin | cro | site | non trouvée
+  formeJuridique     Ltd, DAC, CLG, PLC, etc.
+  numeroCRO          obligatoire, sinon la ligne ne part pas
+  actionnariat       indépendant | détenu par {groupe}
+  comte              le comté irlandais, utile pour voir la concentration à Dublin et Wicklow
+  declencheurType    FACT fort | FACT moyen | SIGNAL
+  declencheurDate    AAAA-MM
+  pays               Irlande
+  langue             toujours "anglais"
+  senderName         "Garry Yankson"
+  statutEmail        publiée | devinée | sans email
+  verificationMX     OK | non vérifié (DNS) | échec
+
+Fichiers supplémentaires
+  contacts-serveur-muet.csv, contacts-sans-email.csv, contacts-second-par-societe.csv,
+  hold.csv, reserve.csv, rapport.md
+
+================================================================================
+PARTIE 10 — CE QU'IL FAUT ÉVITER
+================================================================================
+
+Aucune variable Lemlist vide. firstName, companyName, icebreaker et senderName remplis pour
+  chaque ligne. Une ligne avec une variable vide n'est pas livrée.
+Nom de société propre, un seul nom, sans virgule ni espace parasite, tel qu'il doit apparaître
+  dans un objet de mail.
+Pas de valeur en français dans une colonne qui sert de variable dans un texte anglais.
+Pas de "Re:" en fausse réponse, pas de "Hey".
+Pas de tiret cadratin, nulle part, ni dans l'icebreaker ni dans les notes.
+Pas de studio de 30 personnes ou plus.
+Pas de société d'Irlande du Nord.
+Pas de société sans numéro CRO.
+Pas de déclencheur sans URL.
+Pas d'effectif inventé. "non trouvée" est une réponse acceptable, un chiffre faux ne l'est pas.
+Ne force pas les 20. Un lot de 14 lignes solides vaut mieux qu'un lot de 20 dont six sont
+  creuses.
+
+================================================================================
+PARTIE 11 — RAPPORT FINAL (rapport.md, en français, pour Garry)
+================================================================================
+
+  Nombre de contacts livrés, et si l'objectif de 20 est atteint. Si non, pourquoi.
+  Répartition par palier, pour montrer combien viennent du cœur de cible et combien du repli.
+  Répartition des déclencheurs : FACT fort, FACT moyen, SIGNAL, phrase de repli. C'est
+    l'indicateur de qualité du lot.
+  Âge moyen des déclencheurs, et nombre de sociétés dont le déclencheur dépasse 6 mois.
+  Répartition des effectifs par tranche (1-4, 5-9, 10-29), et studios écartés pour taille, avec
+    le chiffre relevé.
+  Studios écartés pour actionnariat, avec le nom du groupe propriétaire.
+  Sociétés portant un contre-signal, et ce qui a été décidé.
+  Répartition des adresses : publiées, devinées, sans email.
+  Concentration géographique : combien à Dublin et Wicklow, combien ailleurs.
+  Point de conformité : rappel que le cadre irlandais doit être confirmé par Garry avant envoi.
+  Cas limites et domaines non vérifiés.
+  Checkpoint : Campaign, Status, Target (20), Added, Remaining, Excluded, HOLD,
+    Credits used (0), Sequence, Launch (non), Next action.
+
+Ne rien importer ni lancer dans Lemlist. Le lot est livré pour validation par Garry.
