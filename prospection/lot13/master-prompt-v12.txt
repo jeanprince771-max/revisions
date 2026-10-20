@@ -1,0 +1,513 @@
+MASTER PROMPT v12 (Claude Code) — Royaume-Uni : studios d'animation et de jeu video
+independants, 25 contacts nominatifs
+
+CONTEXTE
+WLFG aide les entreprises des industries creatives a ouvrir des portes hors de leur marche
+domestique : clients internationaux, partenaires de coproduction, distribution, structuration
+commerciale. Garry Yankson est l'expediteur. Prospection en anglais, par mail, depuis Lemlist.
+
+Pourquoi ce lot. Le Royaume-Uni est le plus gros marche creatif d'Europe et aussi le plus
+concurrentiel. Deux mouvements de fond le traversent. D'abord la refonte des credits d'impot :
+l'Audio-Visual Expenditure Credit a remplace l'ancien regime animation, et le Video Games
+Expenditure Credit a remplace le Video Games Tax Relief, avec une bascule definitive qui oblige
+chaque studio a redeposer ses projets sous le nouveau regime. Ensuite la contraction du
+commissioning : le retrait des plateformes et la pression sur les budgets jeunesse de la BBC et
+de Channel 4 ont reduit le nombre de commandes domestiques. Cote jeu video, la vague de
+licenciements des grands editeurs a libere du talent et pousse les studios independants a
+chercher des financements et des editeurs hors du Royaume-Uni.
+
+Resultat, le meme besoin des deux cotes : un studio qui detient son IP, dont le marche
+domestique se resserre, et qui n'a personne pour aller la vendre ailleurs.
+
+Ce contexte sectoriel est un cadre, pas un declencheur. Il ne remplace jamais un fait date
+propre a la societe. Il sert a comprendre pourquoi le message a des chances d'etre lu.
+
+Tu ne lances rien et tu n'importes rien dans Lemlist. Tu livres des fichiers pour validation
+par Garry.
+
+VOLUME CIBLE
+25 contacts nominatifs, soit 25 societes, une seule personne par societe.
+Le marche britannique est large, mais les lots v9 et v10 ont deja ratisse l'animation
+britannique. L'apport de ce lot vient donc surtout du jeu video independant et des studios
+hybrides. Repartition souhaitee, sans la forcer : une douzaine en animation ou hybride, une
+douzaine en jeu video. Si l'animation est epuisee par les lots precedents, compense par le jeu
+video et dis-le dans le rapport.
+Mieux vaut livrer 18 societes avec un vrai declencheur date que 25 dont sept reposent sur une
+hypothese. Si tu n'atteins pas 25, livre moins et explique pourquoi.
+
+PERIMETRE GEOGRAPHIQUE
+Royaume-Uni entier : Angleterre, Ecosse, Pays de Galles et Irlande du Nord.
+L'Irlande du Nord est INCLUSE dans ce lot. Un studio de Belfast ou de Derry est britannique et
+releve d'ici.
+La Republique d'Irlande est EXCLUE : elle appartient au lot v11. Dublin, Kilkenny, Wicklow et
+le reste de la Republique ne doivent pas apparaitre ici. Les iles Anglo-Normandes et l'ile de
+Man sont hors perimetre, leur regime juridique differe.
+Verifie l'adresse du siege sur Companies House avant de retenir une societe.
+
+================================================================================
+PARTIE 1 — QUALIFICATION
+================================================================================
+
+SEGMENT 1 — Studios d'animation
+Motion : WLFG Consulting, acces clients et partenaires hors Royaume-Uni.
+
+SEGMENT 2 — Studios de jeu video independants
+Meme motion. Le besoin se formule autrement : trouver un editeur, un financeur ou un partenaire
+de portage hors du Royaume-Uni pour un jeu dont le studio garde les droits.
+
+Effectif cible, pour les deux segments : 5 a 29 salaries. Strictement moins de 30.
+  1 a 4      : HOLD. Souvent un freelance ou un collectif. A ne retenir que si le studio a une
+               IP propre et une production prouvee, par exemple un jeu sorti sur Steam ou
+               console avec des avis publics.
+  5 a 9      : recevable.
+  10 a 29    : coeur de cible. Assez de production pour avoir quelque chose a vendre, pas assez
+               de structure pour avoir un responsable international.
+  30 et plus : EXCLURE, sans exception.
+
+Ou lire l'effectif, dans cet ordre : LinkedIn de la societe, Companies House (comptes annuels
+deposes, rubrique employees des notes), page equipe du site en comptant les personnes nommees.
+Attention : beaucoup de petits studios britanniques deposent des comptes abreges ou des micro
+entity accounts qui ne donnent pas l'effectif. Dans ce cas, LinkedIn et la page equipe
+suffisent, mais note la source.
+Si les sources divergent, retiens la plus recente et note les autres dans la colonne note.
+Si tu ne trouves pas, ecris "non trouvee". N'invente jamais un chiffre.
+
+Inclus :
+  Animation 2D, 3D, stop-motion, series, courts et longs metrages.
+  Studios hybrides animation et jeu video.
+  Studios de jeu video independants qui detiennent leur IP.
+  Studios de services, animation ou jeu, qui developpent aussi leur propre IP.
+
+Exclus :
+  Studios de 30 personnes et plus.
+  Filiales de groupes etrangers ou britanniques, et studios rachetes ces cinq dernieres annees
+    qui ne decident plus seuls. Le secteur britannique a beaucoup consolide, cote animation
+    comme cote jeu video : verifie systematiquement l'actionnariat sur Companies House, rubrique
+    persons with significant control et groupe de rattachement. Ne te fie jamais au site, un
+    studio rachete garde souvent sa marque et son ton independant.
+  Studios en contrat d'exclusivite avec un editeur unique, ou dont tous les jeux sortent chez le
+    meme editeur. Le besoin est deja couvert.
+  Studios de work for hire pur, sans aucune IP propre, cote jeu comme cote animation.
+  Coentreprises creees avec un partenaire etranger pour servir ce partenaire.
+  Ecoles, departements universitaires, incubateurs, associations.
+  Freelances et sole traders sans societe enregistree.
+  Toute societe de la Republique d'Irlande.
+
+Contre-signal a reperer : si le studio affiche un head of sales, un head of international, un
+head of business development senior, un head of publishing, un distributeur attitre ou un
+editeur exclusif, le besoin est deja couvert. Note-le et baisse le score sur le critere Besoin.
+
+Fonctions visees : founder, co-founder, CEO, managing director, studio head, studio director,
+creative director quand il est aussi dirigeant, executive producer, head of production, head of
+development, head of business development, commercial director.
+
+ECHELLE DE REPLI, si tu n'atteins pas 25 societes
+Applique les paliers dans cet ordre, et note dans le rapport combien de societes viennent de
+chaque palier.
+  Palier 1  Studios d'animation, 5 a 29 salaries.
+  Palier 2  Studios hybrides animation et jeu video, meme fourchette.
+  Palier 3  Studios de jeu video independants avec IP propre et sans editeur attitre.
+  Palier 4  Petites societes de production independantes qui produisent du contenu jeunesse ou
+            de l'animation, 10 a 50 salaries.
+  Palier 5  Studios de VFX, de post-production, de capture ou d'outils qui developpent aussi
+            leur propre contenu.
+Ne descends pas au palier suivant tant que tu n'as pas epuise le precedent.
+Ne complete jamais avec un second contact dans une societe deja retenue. Ces contacts vont
+dans contacts-second-par-societe.csv et ne comptent pas dans les 25.
+
+================================================================================
+PARTIE 2 — LES DECLENCHEURS
+================================================================================
+
+Un declencheur est un fait date et source qui rend le message pertinent maintenant.
+
+Regle de fraicheur
+  moins de 6 mois  : declencheur plein, points complets.
+  6 a 12 mois      : declencheur affaibli, la moitie des points.
+  plus de 12 mois  : ce n'est plus un declencheur. Zero point, et la societe plafonne a
+                     COLD_OK.
+Date de reference : le jour de ta recherche. Note la date du fait en AAAA-MM dans
+declencheurDate. Chaque declencheur doit avoir une URL qui s'ouvre. Pas d'URL, pas de
+declencheur.
+
+DECLENCHEURS FORTS, animation
+  Premiere IP propre annoncee, ou passage du travail de service a la creation. C'est le
+    declencheur le plus fort du lot : un studio qui annonce sa premiere serie originale a
+    soudain quelque chose a vendre hors du Royaume-Uni et personne pour le vendre.
+  Financement BFI obtenu, fonds de developpement ou de production.
+  Projet certifie au British Film Institute pour l'Audio-Visual Expenditure Credit, ou societe
+    qui apparait dans les listes de certification culturelle.
+  Financement national obtenu : Screen Scotland, Ffilm Cymru Wales, Northern Ireland Screen,
+    Creative UK.
+  Serie ou long metrage commande ou mis en production, annonce en 2025 ou 2026, par la BBC,
+    Channel 4, Channel 5, Sky Kids, ITV ou un diffuseur etranger.
+  Coproduction annoncee avec un studio etranger.
+  Pitch ou selection a Cartoon Forum, Cartoon Movie, au MIFA d'Annecy, au Kidscreen Summit ou
+    au Children's Media Conference, en particulier une premiere participation.
+
+DECLENCHEURS FORTS, jeu video
+  Nouveau jeu annonce, revele ou date, en developpement sans editeur annonce. C'est le
+    declencheur le plus exploitable du segment jeu : le studio cherche un partenaire et cela se
+    voit.
+  Fin de contrat d'edition, reprise des droits, autoedition annoncee.
+  Financement UK Games Fund obtenu, ou selection Tranzfuser.
+  Certification culturelle British Video Game au BFI, ou projet place sous le Video Games
+    Expenditure Credit.
+  Levee de fonds, premiere entree d'investisseur, financement d'un fonds specialise.
+  Sortie recente ou annoncee sur une nouvelle plateforme, portage console, sortie d'Early
+    Access.
+  Participation ou stand a Gamescom, GDC, PAX, Tokyo Game Show, Day of the Devs, ou selection
+    dans une vitrine type Wholesome Direct ou Future Games Show.
+
+DECLENCHEURS MOYENS, les deux segments
+  Recrutement d'un head of development, d'un producteur senior, d'un head of production ou d'un
+    publishing manager.
+  Prix ou nomination : BAFTA Games Awards, BAFTA Children's and Young People, British Animation
+    Awards, Annie Awards, TIGA Awards, Develop Star Awards, Independent Game Festival.
+  Participation a une delegation Animation UK, Ukie, TIGA ou au pavillon du Department for
+    Business and Trade sur un marche international.
+  Nouveaux locaux, demenagement, ouverture d'un second site.
+  Anniversaire du studio, dixieme ou vingtieme annee.
+  Mise en ligne d'une page Steam avec wishlist ouverte, sans editeur mentionne.
+
+CONTRE-SIGNAUX, qui font baisser le score
+  Recrutement recent d'un head of sales, head of international, head of publishing ou head of
+    distribution.
+  Editeur exclusif, distributeur ou agent de vente attitre affiche sur le site.
+  Tous les jeux du catalogue sortis chez le meme editeur.
+  Aucune actualite depuis plus de deux ans, ou derniere sortie il y a plus de quatre ans.
+  Comptes deposes a Companies House montrant une activite en forte baisse, une mention de going
+    concern, ou un avis de strike off en cours. Un strike off en cours est eliminatoire.
+  Rachat recent par un groupe.
+
+================================================================================
+PARTIE 3 — CLASSEMENT DE L'INFORMATION
+================================================================================
+
+FACT        Fait date et source, vu sur une page que tu as ouverte.
+SIGNAL      Indice date et source qui suggere un besoin sans le prouver, par exemple une offre
+            d'emploi, une page Steam sans editeur, une participation a un marche.
+HYPOTHESIS  Deduction sans source. Autorisee dans la colonne note, nulle part ailleurs. Jamais
+            d'icebreaker, jamais de points.
+
+Une societe dont tu n'as qu'une HYPOTHESIS ne depasse pas HOLD.
+
+================================================================================
+PARTIE 4 — SCORE
+================================================================================
+
+  Declencheur (why now)      30
+  ICP, correspondance cible  20
+  Besoin identifie           20
+  Acces au decideur          15
+  Valeur commerciale         15
+                            ---
+                            100
+
+Declencheur, 30 points
+  30  FACT fort de moins de 6 mois, avec URL.
+  20  FACT moyen de moins de 6 mois, ou FACT fort de 6 a 12 mois.
+  10  SIGNAL date de moins de 12 mois.
+   0  Rien de date, ou fait de plus de 12 mois.
+
+ICP, 20 points
+  20  Palier 1 ou 3, effectif 10 a 29.
+  12  Palier 1 ou 3 avec effectif 5 a 9, ou palier 2.
+   8  Palier 4.
+   5  Palier 5, ou cas limite assume et explique dans la note.
+   0  Hors perimetre, la societe sort.
+
+Besoin, 20 points
+  20  Aucune structure commerciale ou internationale visible, aucun editeur attitre, et le
+      declencheur cree le besoin.
+  12  Structure partielle.
+   5  Structure existante mais le declencheur ouvre un angle complementaire.
+   0  Besoin couvert, contre-signal present.
+
+Acces au decideur, 15 points
+  15  Fondateur ou dirigeant, adresse publiee (qualite A).
+  12  Fondateur ou dirigeant, adresse devinee avec format confirme sur deux adresses reelles au
+      moins et MX qui repond (qualite C1).
+   8  Dirigeant, adresse generique du domaine ou format observe sur une seule adresse (B ou C2).
+   5  Niveau intermediaire avec pouvoir de recommandation.
+   0  Pas de contact nominatif. La ligne ne part pas.
+
+Valeur commerciale, 15 points
+  15  Taille et activite qui justifient un accompagnement payant.
+   8  Valeur moyenne.
+   3  Faible, interet surtout strategique.
+
+Decision
+  80 et plus   PRIORITY
+  65 a 79      COLD_OK
+  50 a 64      HOLD, va dans hold.csv
+  moins de 50  EXCLUDE, note dans le rapport avec la raison
+Seuls PRIORITY et COLD_OK entrent dans le fichier d'import.
+
+================================================================================
+PARTIE 5 — CONTACTS ET ADRESSES
+================================================================================
+
+C'est la partie la plus importante de ce lot. L'adresse nominative publiee est la priorite
+absolue. Quand elle n'existe pas, tu la reconstruis par detection de format, pas par hasard.
+
+Nominatif obligatoire : prenom, nom, fonction. Pas de generique (info@, hello@, contact@,
+press@, support@) en contact principal. Le generique peut aller dans la colonne emailGenerique.
+Un seul contact par societe dans le fichier d'import.
+
+ORDRE DE RECHERCHE, a epuiser dans cet ordre avant de deviner
+  1  Page contact, page equipe, page about du site.
+  2  Mentions legales, politique de confidentialite, page cookies, conditions generales. Dans
+     l'Union europeenne comme au Royaume-Uni, ces pages portent souvent une adresse nominative
+     de responsable de la protection des donnees, qui est fondateur dans un studio de quinze
+     personnes.
+  3  Press kit. Les studios de jeu video britanniques publient tres souvent un press kit, parfois
+     genere par presskit(), a l'adresse /press ou /presskit, avec le contact direct du fondateur.
+     C'est la meilleure source du segment jeu video.
+  4  Page Steam, rubrique support et site officiel, page itch.io, fiche Nintendo ou PlayStation.
+  5  Fiches d'annuaires professionnels : Animation UK, UK Screen Alliance, Ukie, TIGA, Games
+     London, Pact, Northern Ireland Screen, Screen Scotland, Creative Wales.
+  6  Fiches de festivals et de marches, catalogues d'exposants, listes de pitchs. Les catalogues
+     de Cartoon Forum, du MIFA et du Children's Media Conference publient des contacts
+     nominatifs complets.
+  7  Companies House, pour le nom exact et la fonction du dirigeant. Companies House ne publie
+     pas l'adresse mail, mais il confirme l'orthographe du nom, ce qui conditionne la deduction
+     du format.
+  8  Communiques de presse, dossiers de financement, pages de campagne Kickstarter.
+  9  Offres d'emploi avec une adresse de candidature nominative.
+ 10  WHOIS du domaine, quand il n'est pas anonymise.
+
+DETECTION DU FORMAT, pour reconstruire une adresse
+Tu ne devines une adresse qu'apres avoir observe le format sur au moins une adresse reelle du
+meme domaine. La methode :
+  Collecte toutes les adresses reelles que tu as vues sur le domaine, quelle que soit la
+    personne : press kit, mentions legales, offres d'emploi, annuaires, communiques.
+  Deduis le motif. Les motifs courants sont prenom@, prenom.nom@, initialenom@, prenomn@ et
+    nom@. Le motif le plus frequent chez les petits studios britanniques est prenom@ tout court,
+    y compris pour les fondateurs.
+  Verifie la coherence sur une seconde adresse du meme domaine. Deux adresses qui suivent le
+    meme motif valent confirmation.
+  Applique le motif au nom exact lu sur Companies House, pas au nom affiche sur LinkedIn, qui
+    peut etre un diminutif. Un Jonathan sur Companies House peut etre un Jon sur le site : dans
+    ce cas, note les deux variantes dans la colonne variantesEmail et retiens celle qui
+    correspond au motif observe.
+  Attention aux noms composes, aux particules et aux traits d'union. Si le format observe
+    supprime les traits d'union, applique la meme regle.
+  Attention aux domaines multiples : beaucoup de studios ont un domaine vitrine et un domaine de
+    messagerie differents, souvent visibles dans le press kit. Utilise celui des adresses
+    observees, jamais celui de l'URL du site si les deux divergent.
+
+QUALITE DE L'ADRESSE
+  A   Adresse nominative publiee par la societe, ou par une fiche de festival, de marche ou
+      d'annuaire professionnel. Objectif : au moins la moitie du lot en A.
+  B   Adresse publiee sur un domaine de la societe, sans preuve de rattachement a la personne.
+  C1  Adresse reconstruite a partir d'un format observe sur deux adresses reelles ou plus du
+      domaine, avec MX qui repond.
+  C2  Adresse reconstruite a partir d'un format observe sur une seule adresse reelle, avec MX
+      qui repond.
+  D   Adresse devinee sans aucun format observe. INTERDITE. Elle ne part pas, elle va dans
+      contacts-format-inconnu.csv.
+
+REGLE BLOQUANTE
+Aucune adresse reconstruite n'entre dans le fichier d'import si le MX du domaine ne repond pas.
+Elle va dans contacts-serveur-muet.csv.
+Aucune adresse reconstruite n'entre dans le fichier d'import sans format observe. Pas de format,
+pas de deduction. Mieux vaut une ligne en moins qu'une adresse inventee.
+Une ligne en C2 ne peut pas etre PRIORITY.
+
+Verification
+  Verifie le MX du domaine avant d'accepter une adresse. Si le DNS ne repond pas, note
+    "non verifie (DNS)" et sors la ligne de l'import.
+  Attention aux domaines .co.uk, .uk, .games, .studio et .tv, tous courants dans ce secteur. Ne
+    deduis jamais un domaine, lis-le sur une page que tu as ouverte.
+  Attention aux studios heberges chez un prestataire : un MX Google ou Microsoft est normal et
+    ne dit rien de la validite de l'adresse locale.
+  N'invente jamais un domaine. Une meme adresse n'apparait qu'une fois dans l'ensemble des
+    fichiers.
+  Ouvre chaque lien que tu livres. Un lien qui ne s'ouvre pas ne part pas.
+
+================================================================================
+PARTIE 6 — CONFORMITE ROYAUME-UNI
+================================================================================
+
+Le Royaume-Uni applique PECR et le UK GDPR. La prospection B2B par mail y est praticable sans
+consentement prealable quand le destinataire est un corporate subscriber, c'est-a-dire une
+personne morale enregistree. C'est le cadre deja applique dans les lots v9 et v10.
+
+En consequence :
+  Ne retiens que des societes enregistrees a Companies House. Note le numero dans la colonne
+    numeroCompaniesHouse. Une societe sans numero ne part pas.
+  Formes acceptees : Ltd, PLC, LLP, CIC. Ce sont des corporate subscribers.
+  Exclus les sole traders et les partenariats non incorpores : ce sont des individual
+    subscribers, le regime est plus strict et la ligne n'en vaut pas le risque.
+  Verifie le statut de la societe : active. Une societe en dissolved, en liquidation ou sous
+    avis de strike off ne part pas.
+  N'utilise que des adresses professionnelles liees au domaine de la societe. Pas de gmail, pas
+    d'adresse personnelle, pas d'adresse chez un hebergeur generique.
+  L'expediteur doit etre identifiable et le mail doit offrir une desinscription claire.
+  Le message doit etre lie a la fonction professionnelle de la personne.
+  Toute demande de retrait est traitee immediatement et definitivement.
+
+EXCLUSIONS COMMUNES
+  Toute societe deja presente dans Lemlist ou dans HubSpot, quelle que soit la campagne.
+  Toute societe contactee dans les 6 derniers mois.
+  Tout doublon avec les lots deja livres. Les lots v9 et v10 portaient deja sur le Royaume-Uni :
+    verifie ce dedoublonnage en premier, avant toute recherche, et pas a la fin. Verifie aussi
+    les lots Canada, Pologne, Tchequie, Slovaquie, Roumanie, Hongrie, Bulgarie, Espagne,
+    Amerique latine, Bresil, Portugal, Angola, Suede, Afrique et Irlande.
+  Toute societe de la Republique d'Irlande.
+
+================================================================================
+PARTIE 7 — OU CHERCHER
+================================================================================
+
+Sources principales, animation
+  Animation UK, annuaire des membres et actualites.
+  UK Screen Alliance, annuaire des membres.
+  BFI : listes de financements, certifications culturelles, rapports sectoriels.
+  Pact, pour les producteurs independants.
+  Screen Scotland, Ffilm Cymru Wales, Northern Ireland Screen, Creative UK : annonces de
+    financement par nation.
+  Companies House pour la forme juridique, l'effectif, l'actionnariat, les dirigeants et le
+    statut.
+
+Sources principales, jeu video
+  Ukie, annuaire des membres et UK games industry census.
+  TIGA, annuaire des membres.
+  UK Games Fund et Tranzfuser, listes de beneficiaires. C'est la meilleure source de
+    declencheurs datees du segment jeu.
+  Games London, Games Hub et les clusters regionaux : Dundee, Leamington Spa, Brighton,
+    Guildford, Manchester, Belfast, Cardiff.
+  Steam, pages de studios et pages de jeux a venir, rubrique editeur.
+  itch.io pour les tres petits studios.
+
+Sources de declencheurs
+  Listes de participants, d'exposants et de pitchs : Cartoon Forum, Cartoon Movie, MIFA Annecy,
+    Kidscreen Summit, Children's Media Conference, Gamescom, GDC, Develop Brighton, EGX, London
+    Games Festival, Day of the Devs.
+  Annonces de commandes de la BBC, de Channel 4, Channel 5, Sky Kids et ITV.
+  Presse sectorielle : Broadcast, Screen Daily, Televisual, Animation Magazine, GamesIndustry
+    biz, Eurogamer, PCGamesN, Develop, Edge.
+  BAFTA Games Awards, BAFTA Children's and Young People, British Animation Awards, TIGA Awards,
+    Develop Star Awards.
+  Communiques du Department for Business and Trade sur les delegations creatives.
+
+Avertissement sur les noms connus
+Les studios britanniques les plus cites, en animation comme en jeu video, sortiront
+massivement du perimetre pour deux raisons : effectif au-dela de 30, ou appartenance a un
+groupe. C'est normal et attendu. Ne force jamais l'inclusion d'un nom connu. La valeur de ce lot
+est dans les studios de quinze personnes que personne ne cite.
+
+================================================================================
+PARTIE 8 — ICEBREAKER
+================================================================================
+
+Une phrase en anglais, fondee sur le declencheur propre a la societe, avec son URL dans
+icebreakerSourceUrl. Elle nomme le fait, elle ne le commente pas. Pas de compliment generique.
+
+Bon : "I saw [Studio] announced its first original series, [title], in [month]."
+Bon : "I saw [Studio] received UK Games Fund support for [title] in [month]."
+Bon : "I noticed [title] went up on Steam in [month] without a publisher attached."
+Mauvais : "I was impressed by your beautiful work."
+Mauvais : "I love your games."
+
+N'utilise pas le contexte sectoriel comme icebreaker. Ecrire a un dirigeant britannique que son
+secteur se contracte ou que les licenciements s'enchainent n'est ni une nouvelle ni une amorce
+agreable.
+
+Phrase de repli, a marquer icebreakerType = phrase de repli :
+  "I am reaching out to a handful of independent studios in the UK, and {companyName} is one of
+   them."
+Une ligne avec phrase de repli ne peut pas etre PRIORITY.
+
+================================================================================
+PARTIE 9 — SORTIE
+================================================================================
+
+Fichier principal : royaume-uni-animation-jeu-video.csv, 25 lignes maximum.
+
+Colonnes
+email, firstName, lastName, companyName, jobTitle, linkedinUrl, palier, secteur, typeStudio,
+tailleEquipe, sourceTailleEquipe, formeJuridique, numeroCompaniesHouse, statutSociete,
+actionnariat, editeurAttitre, ville, nation, region, declencheur, declencheurType,
+declencheurDate, declencheurSourceUrl, contreSignal, icebreaker, icebreakerSourceUrl,
+icebreakerType, qualiteEmail, formatEmailObserve, nbAdressesObservees, sourceFormat,
+variantesEmail, emailGenerique, verificationMX, scoreDeclencheur, scoreICP, scoreBesoin,
+scoreAcces, scoreValeur, score, decision, senderName, pays, langue, priorite, statutEmail, note
+
+Precisions
+  palier               1 a 5, selon l'echelle de repli
+  secteur              animation | jeu video | hybride | production | vfx-post
+  typeStudio           2d | 3d | stop-motion | mixte | jeu-pc-console | jeu-mobile | hybride
+  tailleEquipe         nombre observe, ou "non trouvee"
+  sourceTailleEquipe   linkedin | companies-house | site | non trouvee
+  formeJuridique       Ltd | PLC | LLP | CIC
+  numeroCompaniesHouse obligatoire, sinon la ligne ne part pas
+  statutSociete        active uniquement, sinon la ligne ne part pas
+  actionnariat         independant | detenu par {groupe}
+  editeurAttitre       aucun | {nom de l'editeur}
+  nation               Angleterre | Ecosse | Pays de Galles | Irlande du Nord
+  declencheurType      FACT fort | FACT moyen | SIGNAL
+  declencheurDate      AAAA-MM
+  qualiteEmail         A | B | C1 | C2
+  formatEmailObserve   le motif deduit, par exemple prenom@ ou prenom.nom@
+  nbAdressesObservees  nombre d'adresses reelles du domaine qui ont servi a deduire le motif
+  sourceFormat         ou tu as vu ces adresses, par exemple press-kit | mentions-legales |
+                       annuaire | offre-emploi
+  variantesEmail       les autres orthographes plausibles, separees par un point-virgule
+  verificationMX       OK | non verifie (DNS) | echec
+  statutEmail          publiee | reconstruite | sans email
+  pays                 Royaume-Uni
+  langue               toujours "anglais"
+  senderName           "Garry Yankson"
+
+Fichiers supplementaires
+  contacts-format-inconnu.csv, contacts-serveur-muet.csv, contacts-sans-email.csv,
+  contacts-second-par-societe.csv, hold.csv, reserve.csv, rapport.md
+
+================================================================================
+PARTIE 10 — CE QU'IL FAUT EVITER
+================================================================================
+
+Aucune variable Lemlist vide. firstName, companyName, icebreaker et senderName remplis pour
+  chaque ligne. Une ligne avec une variable vide n'est pas livree.
+Nom de societe propre, un seul nom, sans virgule, sans Ltd, sans espace parasite, tel qu'il doit
+  apparaitre dans un objet de mail.
+Pas de valeur en francais dans une colonne qui sert de variable dans un texte anglais.
+Pas de "Re:" en fausse reponse, pas de "Hey".
+Pas de tiret cadratin, nulle part, ni dans l'icebreaker ni dans les notes.
+Pas de studio de 30 personnes ou plus.
+Pas de societe de la Republique d'Irlande.
+Pas de societe sans numero Companies House, ou dont le statut n'est pas active.
+Pas de declencheur sans URL.
+Pas d'adresse devinee sans format observe. C'est la regle la plus importante du lot.
+Pas d'effectif invente. "non trouvee" est une reponse acceptable, un chiffre faux ne l'est pas.
+Pas de doublon avec les lots v9 et v10. Verifie-le avant de chercher, pas apres.
+Ne force pas les 25. Un lot de 18 lignes solides vaut mieux qu'un lot de 25 dont sept sont
+  creuses.
+
+================================================================================
+PARTIE 11 — RAPPORT FINAL (rapport.md, en francais, pour Garry)
+================================================================================
+
+  Nombre de contacts livres, et si l'objectif de 25 est atteint. Si non, pourquoi.
+  Repartition animation, jeu video, hybride.
+  Repartition par palier, pour montrer combien viennent du coeur de cible et combien du repli.
+  Repartition des declencheurs : FACT fort, FACT moyen, SIGNAL, phrase de repli. C'est
+    l'indicateur de qualite du lot.
+  Age moyen des declencheurs, et nombre de societes dont le declencheur depasse 6 mois.
+  Repartition de la qualite des adresses : A, B, C1, C2, et combien de lignes reconstruites.
+    Detaille les motifs de format rencontres et leur frequence, cela servira aux lots suivants.
+  Nombre de lignes ecartees pour format inconnu et pour MX muet.
+  Repartition des effectifs par tranche (1-4, 5-9, 10-29), et studios ecartes pour taille, avec
+    le chiffre releve.
+  Studios ecartes pour actionnariat, avec le nom du groupe proprietaire.
+  Studios ecartes pour editeur exclusif, avec le nom de l'editeur.
+  Societes portant un contre-signal, et ce qui a ete decide.
+  Repartition par nation et par cluster, pour voir la concentration.
+  Nombre de doublons ecartes avec les lots v9 et v10, et avec les autres lots.
+  Cas limites et domaines non verifies.
+  Checkpoint : Campaign, Status, Target (25), Added, Remaining, Excluded, HOLD,
+    Credits used (0), Sequence, Launch (non), Next action.
+
+Ne rien importer ni lancer dans Lemlist. Le lot est livre pour validation par Garry.

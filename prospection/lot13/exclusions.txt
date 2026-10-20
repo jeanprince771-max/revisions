@@ -1,0 +1,221 @@
+# Lot 13 Royaume-Uni (v12) : sociétés à exclure AVANT toute recherche
+# 1) Toutes les sociétés du lot 11 (Royaume-Uni, master prompt v9), retenues ou écartées :
+A Productions
+A+C Studios
+AIM
+ALT Animation
+Abbey Road Red
+Aesthetica
+Animade
+Animated Exeter
+Argonon
+Armchair & Rocket
+Atelier 11
+Atlantic Productions
+Audioboom
+Avalon
+Axis Studios
+BPI
+Baltic Creative
+Baltic Ventures
+Barclays Eagle Labs
+Bath Spa University
+Beakus
+Belfast Film Festival
+Belfast XR Festival
+Blast Films
+Blink Films
+Blink Industries
+Blinkink
+Blue Zoo
+Bomper Studio
+Bonnie and Braw
+Bradford Animation Festival
+Brighton Music Conference
+Brighton Zoo
+Brown Bag Films (Manchester)
+Bumpybox
+C21Media
+CAKE
+CAKE Entertainment
+Cahoots Studios
+Cardiff Animation Festival
+Cardiff University
+Celtic Media Festival
+Children's Media Conference
+Cloth Cat
+CoSTAR Emerge-AI (Royal Holloway)
+Cosgrove Hall Fitzpatrick (CHF Entertainment)
+Creative Cities Convention
+Creative Edinburgh
+Creative Estuary
+Creative Export Accelerator (Full Circle Management Solutions)
+Creative Informatics (University of Edinburgh)
+Creative Kernow
+Creative UK
+Crowd Network
+Cultural Enterprise Office
+Culture & Business Scotland
+Curated Place
+Dancing Ledge Productions
+Dazed Media
+Develop:Brighton
+Digital Catapult
+Dog Ears
+Doodle Productions
+EGX
+Edinburgh International Film Festival
+Edinburgh TV Festival
+Encounters Festivals
+Enter Yes
+FOCUS Wales
+Falmouth University
+Fettle Animation
+Ffresh
+Film London
+Firecrest Films
+Five Mile Films
+Flickerpix
+Flipbook Studio
+Fourth Wall
+Fresh Air Production
+Game Republic
+Gaming Academy Programme (Creative Wales)
+Glasgow Film
+Goalhanger
+Goalhanger (The Accelerator)
+Golden Wolf
+Growth Company
+Gutsy Animations
+Hat Trick
+Hoho Entertainment
+Hungry Bear Media
+Illuminated Films
+InGAME (Abertay University)
+Indielab
+Initial
+Innovate UK Business Connect (Next Wave)
+Interference Pattern
+International Documentary Festival Sheffield
+Iris Prize
+Jungle Creations
+KEO Films
+Karrot Animation
+Kavaleer (Manchester)
+Kelsey Media
+Kerrupt Animation
+Key Publishing
+King Banana
+Koala FX
+LCC Accelerate (UAL)
+Lakes International Comic Art Festival
+Launchpad Futures (Cornwall)
+Leeds Creative Labs (University of Leeds)
+Leeds International Film Festival
+Listen
+Liverpool Sound City
+Locksmith Animation
+London Short Film Festival
+Lupus Films
+MCM Comic Con
+Mackinnon & Saunders
+Magic Light Pictures
+Manchester Animation Festival
+Manchester Animation Festival (Animation Featured)
+Media Production & Technology Show
+Miaowito Animation
+Monocle
+Mortons Media
+Moth
+Music Venue Trust
+MyWorld (University of Bristol)
+NFTS (National Film and Television School)
+Nerve Centre
+New Statesman Media Group
+North East Screen
+Northern Ireland Screen (Northern Light Incubator)
+Norwich University of the Arts (Ideas Factory)
+Novel
+Once Were Farmers
+One6th
+Open City Documentary Festival
+Orange Smarty
+Ormeau Labs (ex Ormeau Baths)
+Output Belfast
+Paper Owl Films
+Persephonica
+Picasso Pictures
+Picl Animation
+Plug-In Media
+Pocket Gamer Connects
+Pokedstudio
+Public Interest News Foundation
+Raise the Roof Productions
+Ravensbourne University London
+Red Kite Animation
+Red Planet Pictures
+Red Star 3D
+Rights Booster
+Rondo Media
+Roundhouse
+Royal Holloway
+Rumpus Animation
+STEAMhouse (Birmingham City University)
+SXSW London
+Salamandra
+Scottish Game Developers Association
+Scottish Games Network
+Screen Scotland
+Second Home Studios
+Sixteen South
+Somesense
+Spider Eye Animation Studios
+Spun Gold TV
+Stellify Media
+Strange Beast
+Studio AKA
+Studio Liddell
+Sun & Moon Studios
+Sycamore Studios
+TAUNT
+TCO London
+TVF International
+Techscaler (CodeBase)
+Teesside University
+Th1ng
+The 2D Workshop
+The Brothers McLeod
+The Great Escape
+The Spectator
+Thought Bubble
+Tinopolis
+Toastie Animation
+Tortoise Media
+Touzie Tyke
+Tramshed Tech
+Trunk Animation
+Two Rivers Media
+UK Games Expo
+UK Games Fund
+UK Games Talent and Finance (UK Games Fund / Tranzfuser)
+Ukie
+Ulster University
+University of Kent
+University of York
+University of the Arts London
+Waddell Media
+Watershed
+West Midlands Create Growth Programme
+Wide Days
+Wild Child Animation
+Wildseed Studios
+Wired Sussex
+Women in Games
+Wonderhood Studios
+Wonky
+Woodcut Media
+Zinc Media
+# 2) Déjà dans Lemlist (vu au lot 11) : Goalhanger, Sheffield DocFest, AIM, C21Media, Ukie, Scottish Game Developers Association, Ravensbourne, Develop:Brighton, The Great Escape, Liverpool Sound City, SXSW London, Pocket Gamer Connects ; dans HubSpot : Film London.
+# 3) Lot 12 Irlande (et toute société de la République d'Irlande) :
+Abú Media, Ardán, Black Shamrock, Boon Studios, Boulder Media, Brick Films, Brown Bag Films, Cardel Entertainment, Cartoon Saloon, Cassette Vision, Daily Madness, Desmond Bros Media, Distillery Films, Dream Logic Studios, Dreamfeel, Dyehouse Films, ENIGMA Studio, Enbarr, Fubar Films, Fíbín Media, Gabha Studios, Gambrinous, Giant Animation, Great Island Productions, Greene Rapture, HopSkip Studios, Igloo Animations, Ink and Light, JAM Media, Kavaleer Productions, Kybolt, Lazy Sunday, Lighthouse Studios, Little Moon Animation, Macalla Teoranta, Magpie 6 Media, Mind the Gap Films, Moetion Films, Monster Entertainment, Mooshku, Mystic Systems, Not Here Not There, Out Left Productions, Outlier Games, Paper Owl Films, Paper Panther, Pewter Games Studios, Pictor, Pink Kong Studios, Piranha Bar, Portal Punch, Psychic Software, RAID Studios, ROSG, Rat and Monkey, Reliable Plumbing Services, Romero Games, Rúcach, SANAM, Space Lion Studios, Spooky Doorway, Stiúideo Fia, Studio 9, Studio Meala, Super Megabyte, Table Topple, Tailored Films, Taunt Studios, Telegael, Treehouse Republic, Triggerfish Ireland, Turnip and Duck, Universe or Nothing, WarDucks, Whackala, Wiggleywoo, Wonky Chair Media, and maps and plans, elk.Studios
+# 4) Groupes exclus et leurs filiales : Embracer (Coffee Stain, Amplifier, Saber, THQ Nordic), Tencent, Sony, Microsoft, Keywords Studios, Sumo Group (Tencent), Team17 / Everplay, Frontier, Rebellion, Curve Games, Kwalee, Devolver, Thunderful, Enad Global 7, NetEase, Krafton, Take-Two, EA, Ubisoft, Warner Bros. Discovery, Hasbro, Mediawan, Passion Pictures, Blink group, Immotion, Virtuos, Netflix, Disney.
