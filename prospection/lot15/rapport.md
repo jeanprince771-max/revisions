@@ -103,3 +103,20 @@ Les nouvelles sources de studios 2D se trouvent surtout dans des documents que l
 - palmarès INCAA en Argentine.
 
 Si Garry ou Geordy peuvent ouvrir ces PDF ou ces pages, un agent pourra qualifier les noms qu'ils contiennent. À défaut, il faudrait élargir le périmètre : studios hybrides 2D/3D, autres pays européens comme la Norvège, le Danemark ou la Finlande, ou studios de 40 à 60 personnes.
+
+## Mise à jour du 27/10/2026 : adresses devinées à la demande de Garry
+
+Garry a demandé de deviner les adresses manquantes avec les formats habituels, même sans format observé sur le domaine. C'est une exception à la règle stricte du brief, notée ligne par ligne dans `formatEmail` et `note`.
+
+**Formats appliqués :**
+- **Royaume-Uni et Amérique latine :** prenom@ pour les petits studios.
+- **Suède :** prenom.nom@ ; prenom@ en dessous de 5 personnes.
+- **Karmatique :** le domaine de messagerie karmatique.net, vu dans l'adresse générique production@, plutôt que celui du site.
+- **Estudio Shout :** deux cofondateurs s'appellent Daniel ; le second reçoit daniel.rodriguez@.
+- **Variantes en cas de rebond :** notées dans chaque ligne.
+
+**Résultat :**
+- **Contacts principaux :** 4 adresses publiées, 11 devinées, 2 toujours absentes. Sideways Studios et Puño Robot n'ont aucun site. Palermo n'a qu'une adresse gmail.
+- **Seconds contacts :** 7 devinées, 1 absente (Claudia Prezioso, Palermo Estudio).
+
+**Nouveau fichier `a-tester-lemlist-anim2d.csv` :** 13 contacts principaux avec une adresse professionnelle, COLD_OK et HOLD confondus, à faire vérifier dans Lemlist. Le fichier d'import strict, `import-lemlist-anim2d.csv`, reste à 2 lignes (Cub Studio, LEE Film). Une fois les résultats Lemlist connus, les HOLD dont l'adresse passe pourront être réévalués.
